@@ -38,6 +38,13 @@
     self.navigationController.toolbarHidden = YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainBackground.png"]];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -80,6 +87,7 @@
     
     if(cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier] autorelease];
+        cell.backgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellBackgroundLocation.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
         cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
@@ -105,7 +113,7 @@
 {
     UIView *headerView = [[UIView alloc] init];
     headerView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"headerView.png"]];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 1, 320, 20)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 1, 320, 20)];
     titleLabel.text = [self tableView:tableView titleForHeaderInSection:section];
     titleLabel.shadowColor = [UIColor whiteColor];
     titleLabel.shadowOffset = CGSizeMake(0.5, 0.5);

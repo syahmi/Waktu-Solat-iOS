@@ -57,9 +57,8 @@
 {
     [super viewWillAppear:animated];
     
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_settings.png"]];
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainBackground.png"]];
 }
-
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -163,6 +162,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
         cell.detailTextLabel.textColor = [UIColor colorWithRed:44/255.0 green:128/255.0 blue:33/255.0 alpha:1];
     } if ([indexPath section] == 0) {
+        cell.backgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellBackground.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
         if(indexPath.row == 0) {
             cell.imageView.image = [UIImage imageNamed:@"imsak.png"];
         } if(indexPath.row == 1) {

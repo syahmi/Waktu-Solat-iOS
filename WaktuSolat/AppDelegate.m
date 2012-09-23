@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "KawasanViewController.h"
 #import "WaktuSolatViewController.h"
+#import "MFSideMenu.h"
+#import "SideMenuViewController.h"
 
 @implementation AppDelegate
 
@@ -62,7 +64,17 @@
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
+    SideMenuViewController *sideMenuViewController = [[SideMenuViewController alloc] init];
+    
+    MenuOptions options = MenuButtonEnabled|BackButtonEnabled;
+    // make sure to display the navigation controller before calling this
+    [MFSideMenuManager configureWithNavigationController:navigationController
+                                      sideMenuController:sideMenuViewController
+                                                menuSide:MenuLeftHandSide
+                                                 options:options];
+    
     [self _rateApp];
+    [SideMenuViewController release];
     
     return YES;
 }
