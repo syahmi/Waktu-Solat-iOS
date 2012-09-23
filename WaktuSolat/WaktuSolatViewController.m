@@ -42,10 +42,13 @@
     
     self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
     
-    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] init];
+    UIButton *sidebarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [sidebarButton setFrame:CGRectMake(0, 0, 40, 40)];
+    [sidebarButton addTarget:self action:@selector(settings) forControlEvents:UIControlEventTouchUpInside];
+    [sidebarButton setImage:[UIImage imageNamed:@"sidebarButton.png"] forState:UIControlStateNormal];
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithCustomView:sidebarButton];
+
     self.navigationItem.leftBarButtonItem = leftButton;
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_settings.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(settings)];
-    self.navigationItem.leftBarButtonItem.enabled = YES;
 
     [leftButton release];
 }
@@ -54,7 +57,7 @@
 {
     [super viewWillAppear:animated];
     
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_settings.png"]];
 }
 
 
@@ -159,6 +162,22 @@
     if(cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
         cell.detailTextLabel.textColor = [UIColor colorWithRed:44/255.0 green:128/255.0 blue:33/255.0 alpha:1];
+    } if ([indexPath section] == 0) {
+        if(indexPath.row == 0) {
+            cell.imageView.image = [UIImage imageNamed:@"imsak.png"];
+        } if(indexPath.row == 1) {
+            cell.imageView.image = [UIImage imageNamed:@"subuh.png"];
+        } if(indexPath.row == 2) {
+            cell.imageView.image = [UIImage imageNamed:@"syuruk.png"];
+        } if(indexPath.row == 3) {
+            cell.imageView.image = [UIImage imageNamed:@"zohor.png"];
+        } if(indexPath.row == 4) {
+            cell.imageView.image = [UIImage imageNamed:@"asar.png"];
+        } if(indexPath.row == 5) {
+            cell.imageView.image = [UIImage imageNamed:@"maghrib.png"];
+        } if(indexPath.row == 6) {
+            cell.imageView.image = [UIImage imageNamed:@"isyak.png"];
+        }
     }
     
     cell.textLabel.text = [waktuSolatLabel objectAtIndex:indexPath.row];
@@ -171,7 +190,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 60;
 }
 
 -(IBAction)kawasan 

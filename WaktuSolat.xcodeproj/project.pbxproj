@@ -24,6 +24,22 @@
 		6E66D393150246C9001BAE53 /* headerView.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E66D38B150246C9001BAE53 /* headerView.png */; };
 		6E66D394150246C9001BAE53 /* headerView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E66D38C150246C9001BAE53 /* headerView@2x.png */; };
 		6E779544160F49B6009504D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779543160F49B6009504D9 /* Default-568h@2x.png */; };
+		6E779557160F531B009504D9 /* sidebarButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779555160F531B009504D9 /* sidebarButton.png */; };
+		6E779558160F531B009504D9 /* sidebarButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779556160F531B009504D9 /* sidebarButton@2x.png */; };
+		6E779560160F5EF5009504D9 /* zohor.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77955E160F5EF5009504D9 /* zohor.png */; };
+		6E779561160F5EF5009504D9 /* zohor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77955F160F5EF5009504D9 /* zohor@2x.png */; };
+		6E779564160F6000009504D9 /* imsak.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779562160F6000009504D9 /* imsak.png */; };
+		6E779565160F6000009504D9 /* imsak@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779563160F6000009504D9 /* imsak@2x.png */; };
+		6E779568160F60A8009504D9 /* subuh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779566160F60A8009504D9 /* subuh.png */; };
+		6E779569160F60A8009504D9 /* subuh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779567160F60A8009504D9 /* subuh@2x.png */; };
+		6E77956C160F614B009504D9 /* syuruk.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77956A160F614B009504D9 /* syuruk.png */; };
+		6E77956D160F614B009504D9 /* syuruk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77956B160F614B009504D9 /* syuruk@2x.png */; };
+		6E779570160F6206009504D9 /* asar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77956E160F6205009504D9 /* asar.png */; };
+		6E779571160F6206009504D9 /* asar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77956F160F6205009504D9 /* asar@2x.png */; };
+		6E779574160F6257009504D9 /* maghrib.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779572160F6256009504D9 /* maghrib.png */; };
+		6E779575160F6257009504D9 /* maghrib@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779573160F6257009504D9 /* maghrib@2x.png */; };
+		6E779578160F6307009504D9 /* isyak.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779576160F6307009504D9 /* isyak.png */; };
+		6E779579160F6307009504D9 /* isyak@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779577160F6307009504D9 /* isyak@2x.png */; };
 		6EB5F5061500F1AA00AF21BA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB5F5051500F1AA00AF21BA /* libxml2.dylib */; };
 		6EB5F5091500F2AC00AF21BA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5071500F2AC00AF21BA /* icon.png */; };
 		6EB5F50A1500F2AC00AF21BA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5081500F2AC00AF21BA /* icon@2x.png */; };
@@ -66,6 +82,22 @@
 		6E66D38B150246C9001BAE53 /* headerView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headerView.png; path = WaktuSolat/headerView.png; sourceTree = "<group>"; };
 		6E66D38C150246C9001BAE53 /* headerView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "headerView@2x.png"; path = "WaktuSolat/headerView@2x.png"; sourceTree = "<group>"; };
 		6E779543160F49B6009504D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "WaktuSolat/Default-568h@2x.png"; sourceTree = "<group>"; };
+		6E779555160F531B009504D9 /* sidebarButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidebarButton.png; path = WaktuSolat/sidebarButton.png; sourceTree = "<group>"; };
+		6E779556160F531B009504D9 /* sidebarButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sidebarButton@2x.png"; path = "WaktuSolat/sidebarButton@2x.png"; sourceTree = "<group>"; };
+		6E77955E160F5EF5009504D9 /* zohor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zohor.png; path = WaktuSolat/zohor.png; sourceTree = "<group>"; };
+		6E77955F160F5EF5009504D9 /* zohor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zohor@2x.png"; path = "WaktuSolat/zohor@2x.png"; sourceTree = "<group>"; };
+		6E779562160F6000009504D9 /* imsak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imsak.png; path = WaktuSolat/imsak.png; sourceTree = "<group>"; };
+		6E779563160F6000009504D9 /* imsak@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imsak@2x.png"; path = "WaktuSolat/imsak@2x.png"; sourceTree = "<group>"; };
+		6E779566160F60A8009504D9 /* subuh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subuh.png; path = WaktuSolat/subuh.png; sourceTree = "<group>"; };
+		6E779567160F60A8009504D9 /* subuh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "subuh@2x.png"; path = "WaktuSolat/subuh@2x.png"; sourceTree = "<group>"; };
+		6E77956A160F614B009504D9 /* syuruk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = syuruk.png; path = WaktuSolat/syuruk.png; sourceTree = "<group>"; };
+		6E77956B160F614B009504D9 /* syuruk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "syuruk@2x.png"; path = "WaktuSolat/syuruk@2x.png"; sourceTree = "<group>"; };
+		6E77956E160F6205009504D9 /* asar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = asar.png; path = WaktuSolat/asar.png; sourceTree = "<group>"; };
+		6E77956F160F6205009504D9 /* asar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "asar@2x.png"; path = "WaktuSolat/asar@2x.png"; sourceTree = "<group>"; };
+		6E779572160F6256009504D9 /* maghrib.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maghrib.png; path = WaktuSolat/maghrib.png; sourceTree = "<group>"; };
+		6E779573160F6257009504D9 /* maghrib@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "maghrib@2x.png"; path = "WaktuSolat/maghrib@2x.png"; sourceTree = "<group>"; };
+		6E779576160F6307009504D9 /* isyak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = isyak.png; path = WaktuSolat/isyak.png; sourceTree = "<group>"; };
+		6E779577160F6307009504D9 /* isyak@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "isyak@2x.png"; path = "WaktuSolat/isyak@2x.png"; sourceTree = "<group>"; };
 		6EB5F5051500F1AA00AF21BA /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		6EB5F5071500F2AC00AF21BA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = WaktuSolat/icon.png; sourceTree = "<group>"; };
 		6EB5F5081500F2AC00AF21BA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "WaktuSolat/icon@2x.png"; sourceTree = "<group>"; };
@@ -149,6 +181,20 @@
 		6EB5F5031500EFF600AF21BA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6E779562160F6000009504D9 /* imsak.png */,
+				6E779563160F6000009504D9 /* imsak@2x.png */,
+				6E779566160F60A8009504D9 /* subuh.png */,
+				6E779567160F60A8009504D9 /* subuh@2x.png */,
+				6E77956A160F614B009504D9 /* syuruk.png */,
+				6E77956B160F614B009504D9 /* syuruk@2x.png */,
+				6E77955E160F5EF5009504D9 /* zohor.png */,
+				6E77955F160F5EF5009504D9 /* zohor@2x.png */,
+				6E77956E160F6205009504D9 /* asar.png */,
+				6E77956F160F6205009504D9 /* asar@2x.png */,
+				6E779572160F6256009504D9 /* maghrib.png */,
+				6E779573160F6257009504D9 /* maghrib@2x.png */,
+				6E779576160F6307009504D9 /* isyak.png */,
+				6E779577160F6307009504D9 /* isyak@2x.png */,
 				6E14569315C7DC94005AC6EA /* bg_settings.png */,
 				6E14569415C7DC94005AC6EA /* bg_settings@2x.png */,
 				6E66D385150246C9001BAE53 /* background.png */,
@@ -164,6 +210,8 @@
 				6EB5F5081500F2AC00AF21BA /* icon@2x.png */,
 				6E4C77331510895900B46D7A /* nav_bar.png */,
 				6E4C77341510895900B46D7A /* nav_bar@2x.png */,
+				6E779555160F531B009504D9 /* sidebarButton.png */,
+				6E779556160F531B009504D9 /* sidebarButton@2x.png */,
 				6EC72AD61539918100EA8132 /* toolbar_img.png */,
 				6EC72AD71539918100EA8132 /* toolbar_img@2x.png */,
 			);
@@ -302,6 +350,22 @@
 				6E14569515C7DC94005AC6EA /* bg_settings.png in Resources */,
 				6E14569615C7DC94005AC6EA /* bg_settings@2x.png in Resources */,
 				6E779544160F49B6009504D9 /* Default-568h@2x.png in Resources */,
+				6E779557160F531B009504D9 /* sidebarButton.png in Resources */,
+				6E779558160F531B009504D9 /* sidebarButton@2x.png in Resources */,
+				6E779560160F5EF5009504D9 /* zohor.png in Resources */,
+				6E779561160F5EF5009504D9 /* zohor@2x.png in Resources */,
+				6E779564160F6000009504D9 /* imsak.png in Resources */,
+				6E779565160F6000009504D9 /* imsak@2x.png in Resources */,
+				6E779568160F60A8009504D9 /* subuh.png in Resources */,
+				6E779569160F60A8009504D9 /* subuh@2x.png in Resources */,
+				6E77956C160F614B009504D9 /* syuruk.png in Resources */,
+				6E77956D160F614B009504D9 /* syuruk@2x.png in Resources */,
+				6E779570160F6206009504D9 /* asar.png in Resources */,
+				6E779571160F6206009504D9 /* asar@2x.png in Resources */,
+				6E779574160F6257009504D9 /* maghrib.png in Resources */,
+				6E779575160F6257009504D9 /* maghrib@2x.png in Resources */,
+				6E779578160F6307009504D9 /* isyak.png in Resources */,
+				6E779579160F6307009504D9 /* isyak@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

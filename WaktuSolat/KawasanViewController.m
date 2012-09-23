@@ -107,11 +107,11 @@
     headerView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"headerView.png"]];
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 1, 320, 20)];
     titleLabel.text = [self tableView:tableView titleForHeaderInSection:section];
-    titleLabel.shadowColor = [UIColor blackColor];
+    titleLabel.shadowColor = [UIColor whiteColor];
     titleLabel.shadowOffset = CGSizeMake(0.5, 0.5);
     titleLabel.backgroundColor = [UIColor clearColor];
-    titleLabel.font = [UIFont fontWithName:@"Helvetica" size:13];
-    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:12];
+    titleLabel.textColor = [UIColor blackColor];
     [headerView addSubview:titleLabel];
     
     return headerView;
