@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
 #import "KawasanViewController.h"
 #import "WaktuSolatViewController.h"
 
@@ -49,6 +48,10 @@
     navigationController.navigationBar.tintColor = [UIColor colorWithRed:74/255.0 green:158/255.0 blue:55/255.0 alpha:1];
     navigationController.toolbar.tintColor = [UIColor colorWithRed:74/255.0 green:158/255.0 blue:55/255.0 alpha:1];
     [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+    
+    UIImage *backButtonImage = [[UIImage imageNamed:@"backButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 20, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
     
     [_window addSubview:_kawasanViewController.view];
     [_window makeKeyAndVisible];

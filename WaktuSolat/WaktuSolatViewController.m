@@ -40,15 +40,15 @@
     
     self.navigationController.toolbarHidden = NO;
     
-    self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
-    
     UIButton *sidebarButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [sidebarButton setFrame:CGRectMake(0, 0, 40, 40)];
+    [sidebarButton setFrame:CGRectMake(0, 0, 40, 22)];
     [sidebarButton addTarget:self action:@selector(settings) forControlEvents:UIControlEventTouchUpInside];
     [sidebarButton setImage:[UIImage imageNamed:@"sidebarButton.png"] forState:UIControlStateNormal];
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithCustomView:sidebarButton];
 
     self.navigationItem.leftBarButtonItem = leftButton;
+
+    self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
 
     [leftButton release];
 }
