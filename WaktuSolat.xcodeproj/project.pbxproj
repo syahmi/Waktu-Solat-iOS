@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E14569515C7DC94005AC6EA /* bg_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E14569315C7DC94005AC6EA /* bg_settings.png */; };
+		6E14569615C7DC94005AC6EA /* bg_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E14569415C7DC94005AC6EA /* bg_settings@2x.png */; };
+		6E15B29315C7D08700789D78 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E15B29115C7D08700789D78 /* SettingsViewController.m */; };
+		6E15B29415C7D08700789D78 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E15B29215C7D08700789D78 /* SettingsViewController.xib */; };
+		6E2974ED1505EC77001A2FEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2974EC1505EC77001A2FEE /* QuartzCore.framework */; };
+		6E4C77351510895900B46D7A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C77311510895900B46D7A /* Default.png */; };
+		6E4C77361510895900B46D7A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C77321510895900B46D7A /* Default@2x.png */; };
+		6E4C77371510895900B46D7A /* nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C77331510895900B46D7A /* nav_bar.png */; };
+		6E4C77381510895900B46D7A /* nav_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C77341510895900B46D7A /* nav_bar@2x.png */; };
+		6E5AB21015CF19E700CECDE3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5AB20F15CF19E700CECDE3 /* MessageUI.framework */; };
+		6E640A551513C1550030B1F1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E640A541513C1550030B1F1 /* Settings.bundle */; };
+		6E66D3651502082D001BAE53 /* solat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E66D3641502082D001BAE53 /* solat.plist */; };
+		6E66D38D150246C9001BAE53 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E66D385150246C9001BAE53 /* background.png */; };
+		6E66D38E150246C9001BAE53 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E66D386150246C9001BAE53 /* background@2x.png */; };
+		6E66D393150246C9001BAE53 /* headerView.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E66D38B150246C9001BAE53 /* headerView.png */; };
+		6E66D394150246C9001BAE53 /* headerView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E66D38C150246C9001BAE53 /* headerView@2x.png */; };
+		6E779544160F49B6009504D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E779543160F49B6009504D9 /* Default-568h@2x.png */; };
+		6EB5F5061500F1AA00AF21BA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB5F5051500F1AA00AF21BA /* libxml2.dylib */; };
+		6EB5F5091500F2AC00AF21BA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5071500F2AC00AF21BA /* icon.png */; };
+		6EB5F50A1500F2AC00AF21BA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5081500F2AC00AF21BA /* icon@2x.png */; };
+		6EB5F5171500F31F00AF21BA /* JakimPrayerTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F5121500F31F00AF21BA /* JakimPrayerTime.m */; };
+		6EB5F5181500F31F00AF21BA /* JakimSolatParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F5141500F31F00AF21BA /* JakimSolatParser.m */; };
+		6EB5F5191500F31F00AF21BA /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F5161500F31F00AF21BA /* XPathQuery.m */; };
+		6EB5F51D1500F3F200AF21BA /* WaktuSolatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F51B1500F3F200AF21BA /* WaktuSolatViewController.m */; };
+		6EB5F51E1500F3F200AF21BA /* WaktuSolatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F51C1500F3F200AF21BA /* WaktuSolatViewController.xib */; };
+		6EC72AD81539918100EA8132 /* toolbar_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC72AD61539918100EA8132 /* toolbar_img.png */; };
+		6EC72AD91539918100EA8132 /* toolbar_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC72AD71539918100EA8132 /* toolbar_img@2x.png */; };
+		6ECFFB4614F8E8FA00151025 /* eSolat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ECFFB4514F8E8FA00151025 /* eSolat.plist */; };
+		6EE54957156E2D4A00CAA0EF /* btn_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE54955156E2D4A00CAA0EF /* btn_settings.png */; };
+		6EE54958156E2D4A00CAA0EF /* btn_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE54956156E2D4A00CAA0EF /* btn_settings@2x.png */; };
+		9F86DBAC14F8E20500606189 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86DBAB14F8E20500606189 /* UIKit.framework */; };
+		9F86DBAE14F8E20500606189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86DBAD14F8E20500606189 /* Foundation.framework */; };
+		9F86DBB014F8E20500606189 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86DBAF14F8E20500606189 /* CoreGraphics.framework */; };
+		9F86DBB614F8E20500606189 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F86DBB414F8E20500606189 /* InfoPlist.strings */; };
+		9F86DBB814F8E20500606189 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F86DBB714F8E20500606189 /* main.m */; };
+		9F86DBBC14F8E20500606189 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F86DBBB14F8E20500606189 /* AppDelegate.m */; };
+		9F86DBBF14F8E20500606189 /* KawasanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F86DBBE14F8E20500606189 /* KawasanViewController.m */; };
+		9F86DBC214F8E20500606189 /* KawasanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86DBC014F8E20500606189 /* KawasanViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E14569315C7DC94005AC6EA /* bg_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_settings.png; path = WaktuSolat/bg_settings.png; sourceTree = "<group>"; };
+		6E14569415C7DC94005AC6EA /* bg_settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_settings@2x.png"; path = "WaktuSolat/bg_settings@2x.png"; sourceTree = "<group>"; };
+		6E15B29015C7D08700789D78 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		6E15B29115C7D08700789D78 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		6E15B29215C7D08700789D78 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		6E2974EC1505EC77001A2FEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E4C77311510895900B46D7A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = WaktuSolat/Default.png; sourceTree = "<group>"; };
+		6E4C77321510895900B46D7A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "WaktuSolat/Default@2x.png"; sourceTree = "<group>"; };
+		6E4C77331510895900B46D7A /* nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_bar.png; path = WaktuSolat/nav_bar.png; sourceTree = "<group>"; };
+		6E4C77341510895900B46D7A /* nav_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nav_bar@2x.png"; path = "WaktuSolat/nav_bar@2x.png"; sourceTree = "<group>"; };
+		6E5AB20F15CF19E700CECDE3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6E640A541513C1550030B1F1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
+		6E66D3641502082D001BAE53 /* solat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = solat.plist; sourceTree = "<group>"; };
+		6E66D385150246C9001BAE53 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = WaktuSolat/background.png; sourceTree = "<group>"; };
+		6E66D386150246C9001BAE53 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "WaktuSolat/background@2x.png"; sourceTree = "<group>"; };
+		6E66D38B150246C9001BAE53 /* headerView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headerView.png; path = WaktuSolat/headerView.png; sourceTree = "<group>"; };
+		6E66D38C150246C9001BAE53 /* headerView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "headerView@2x.png"; path = "WaktuSolat/headerView@2x.png"; sourceTree = "<group>"; };
+		6E779543160F49B6009504D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "WaktuSolat/Default-568h@2x.png"; sourceTree = "<group>"; };
+		6EB5F5051500F1AA00AF21BA /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		6EB5F5071500F2AC00AF21BA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = WaktuSolat/icon.png; sourceTree = "<group>"; };
+		6EB5F5081500F2AC00AF21BA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "WaktuSolat/icon@2x.png"; sourceTree = "<group>"; };
+		6EB5F5111500F31F00AF21BA /* JakimPrayerTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JakimPrayerTime.h; sourceTree = "<group>"; };
+		6EB5F5121500F31F00AF21BA /* JakimPrayerTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JakimPrayerTime.m; sourceTree = "<group>"; };
+		6EB5F5131500F31F00AF21BA /* JakimSolatParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JakimSolatParser.h; sourceTree = "<group>"; };
+		6EB5F5141500F31F00AF21BA /* JakimSolatParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JakimSolatParser.m; sourceTree = "<group>"; };
+		6EB5F5151500F31F00AF21BA /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		6EB5F5161500F31F00AF21BA /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		6EB5F51A1500F3F200AF21BA /* WaktuSolatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaktuSolatViewController.h; sourceTree = "<group>"; };
+		6EB5F51B1500F3F200AF21BA /* WaktuSolatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaktuSolatViewController.m; sourceTree = "<group>"; };
+		6EB5F51C1500F3F200AF21BA /* WaktuSolatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaktuSolatViewController.xib; sourceTree = "<group>"; };
+		6EC72AD61539918100EA8132 /* toolbar_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar_img.png; path = WaktuSolat/toolbar_img.png; sourceTree = "<group>"; };
+		6EC72AD71539918100EA8132 /* toolbar_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toolbar_img@2x.png"; path = "WaktuSolat/toolbar_img@2x.png"; sourceTree = "<group>"; };
+		6ECFFB4514F8E8FA00151025 /* eSolat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = eSolat.plist; sourceTree = "<group>"; };
+		6EE54955156E2D4A00CAA0EF /* btn_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_settings.png; path = WaktuSolat/btn_settings.png; sourceTree = "<group>"; };
+		6EE54956156E2D4A00CAA0EF /* btn_settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_settings@2x.png"; path = "WaktuSolat/btn_settings@2x.png"; sourceTree = "<group>"; };
+		9F86DBA714F8E20500606189 /* WaktuSolat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaktuSolat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F86DBAB14F8E20500606189 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F86DBAD14F8E20500606189 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F86DBAF14F8E20500606189 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F86DBB314F8E20500606189 /* WaktuSolat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaktuSolat-Info.plist"; sourceTree = "<group>"; };
+		9F86DBB514F8E20500606189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F86DBB714F8E20500606189 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F86DBB914F8E20500606189 /* WaktuSolat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaktuSolat-Prefix.pch"; sourceTree = "<group>"; };
+		9F86DBBA14F8E20500606189 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F86DBBB14F8E20500606189 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F86DBBD14F8E20500606189 /* KawasanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KawasanViewController.h; sourceTree = "<group>"; };
+		9F86DBBE14F8E20500606189 /* KawasanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KawasanViewController.m; sourceTree = "<group>"; };
+		9F86DBC114F8E20500606189 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KawasanViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F86DBA414F8E20500606189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5AB21015CF19E700CECDE3 /* MessageUI.framework in Frameworks */,
+				6E2974ED1505EC77001A2FEE /* QuartzCore.framework in Frameworks */,
+				6EB5F5061500F1AA00AF21BA /* libxml2.dylib in Frameworks */,
+				9F86DBAC14F8E20500606189 /* UIKit.framework in Frameworks */,
+				9F86DBAE14F8E20500606189 /* Foundation.framework in Frameworks */,
+				9F86DBB014F8E20500606189 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E5AB25315CF21CD00CECDE3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F86DBBA14F8E20500606189 /* AppDelegate.h */,
+				9F86DBBB14F8E20500606189 /* AppDelegate.m */,
+				9F86DBBD14F8E20500606189 /* KawasanViewController.h */,
+				9F86DBBE14F8E20500606189 /* KawasanViewController.m */,
+				9F86DBC014F8E20500606189 /* KawasanViewController.xib */,
+				6EB5F51A1500F3F200AF21BA /* WaktuSolatViewController.h */,
+				6EB5F51B1500F3F200AF21BA /* WaktuSolatViewController.m */,
+				6EB5F51C1500F3F200AF21BA /* WaktuSolatViewController.xib */,
+				6E15B29015C7D08700789D78 /* SettingsViewController.h */,
+				6E15B29115C7D08700789D78 /* SettingsViewController.m */,
+				6E15B29215C7D08700789D78 /* SettingsViewController.xib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6E66D3621501FC4C001BAE53 /* JakimSolatWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				6EB5F5111500F31F00AF21BA /* JakimPrayerTime.h */,
+				6EB5F5121500F31F00AF21BA /* JakimPrayerTime.m */,
+				6EB5F5131500F31F00AF21BA /* JakimSolatParser.h */,
+				6EB5F5141500F31F00AF21BA /* JakimSolatParser.m */,
+				6EB5F5151500F31F00AF21BA /* XPathQuery.h */,
+				6EB5F5161500F31F00AF21BA /* XPathQuery.m */,
+			);
+			name = JakimSolatWrapper;
+			sourceTree = "<group>";
+		};
+		6EB5F5031500EFF600AF21BA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6E14569315C7DC94005AC6EA /* bg_settings.png */,
+				6E14569415C7DC94005AC6EA /* bg_settings@2x.png */,
+				6E66D385150246C9001BAE53 /* background.png */,
+				6E66D386150246C9001BAE53 /* background@2x.png */,
+				6EE54955156E2D4A00CAA0EF /* btn_settings.png */,
+				6EE54956156E2D4A00CAA0EF /* btn_settings@2x.png */,
+				6E4C77311510895900B46D7A /* Default.png */,
+				6E4C77321510895900B46D7A /* Default@2x.png */,
+				6E779543160F49B6009504D9 /* Default-568h@2x.png */,
+				6E66D38B150246C9001BAE53 /* headerView.png */,
+				6E66D38C150246C9001BAE53 /* headerView@2x.png */,
+				6EB5F5071500F2AC00AF21BA /* icon.png */,
+				6EB5F5081500F2AC00AF21BA /* icon@2x.png */,
+				6E4C77331510895900B46D7A /* nav_bar.png */,
+				6E4C77341510895900B46D7A /* nav_bar@2x.png */,
+				6EC72AD61539918100EA8132 /* toolbar_img.png */,
+				6EC72AD71539918100EA8132 /* toolbar_img@2x.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9F86DB9C14F8E20500606189 = {
+			isa = PBXGroup;
+			children = (
+				9F86DBB114F8E20500606189 /* WaktuSolat */,
+				9F86DBAA14F8E20500606189 /* Frameworks */,
+				9F86DBA814F8E20500606189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F86DBA814F8E20500606189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F86DBA714F8E20500606189 /* WaktuSolat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F86DBAA14F8E20500606189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB5F5051500F1AA00AF21BA /* libxml2.dylib */,
+				6E5AB20F15CF19E700CECDE3 /* MessageUI.framework */,
+				6E2974EC1505EC77001A2FEE /* QuartzCore.framework */,
+				9F86DBAB14F8E20500606189 /* UIKit.framework */,
+				9F86DBAD14F8E20500606189 /* Foundation.framework */,
+				9F86DBAF14F8E20500606189 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F86DBB114F8E20500606189 /* WaktuSolat */ = {
+			isa = PBXGroup;
+			children = (
+				6E66D3621501FC4C001BAE53 /* JakimSolatWrapper */,
+				6E5AB25315CF21CD00CECDE3 /* Classes */,
+				6EB5F5031500EFF600AF21BA /* Images */,
+				9F86DBB214F8E20500606189 /* Supporting Files */,
+				6ECFFB4514F8E8FA00151025 /* eSolat.plist */,
+				6E66D3641502082D001BAE53 /* solat.plist */,
+				6E640A541513C1550030B1F1 /* Settings.bundle */,
+			);
+			path = WaktuSolat;
+			sourceTree = "<group>";
+		};
+		9F86DBB214F8E20500606189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F86DBB314F8E20500606189 /* WaktuSolat-Info.plist */,
+				9F86DBB414F8E20500606189 /* InfoPlist.strings */,
+				9F86DBB714F8E20500606189 /* main.m */,
+				9F86DBB914F8E20500606189 /* WaktuSolat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F86DBA614F8E20500606189 /* WaktuSolat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F86DBC514F8E20500606189 /* Build configuration list for PBXNativeTarget "WaktuSolat" */;
+			buildPhases = (
+				9F86DBA314F8E20500606189 /* Sources */,
+				9F86DBA414F8E20500606189 /* Frameworks */,
+				9F86DBA514F8E20500606189 /* Resources */,
+				6E6C918C152A0B91004FB62C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaktuSolat;
+			productName = WaktuSolat;
+			productReference = 9F86DBA714F8E20500606189 /* WaktuSolat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F86DB9E14F8E20500606189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Wutmedia;
+			};
+			buildConfigurationList = 9F86DBA114F8E20500606189 /* Build configuration list for PBXProject "WaktuSolat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9F86DB9C14F8E20500606189;
+			productRefGroup = 9F86DBA814F8E20500606189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F86DBA614F8E20500606189 /* WaktuSolat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F86DBA514F8E20500606189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F86DBB614F8E20500606189 /* InfoPlist.strings in Resources */,
+				9F86DBC214F8E20500606189 /* KawasanViewController.xib in Resources */,
+				6ECFFB4614F8E8FA00151025 /* eSolat.plist in Resources */,
+				6EB5F5091500F2AC00AF21BA /* icon.png in Resources */,
+				6EB5F50A1500F2AC00AF21BA /* icon@2x.png in Resources */,
+				6EB5F51E1500F3F200AF21BA /* WaktuSolatViewController.xib in Resources */,
+				6E66D3651502082D001BAE53 /* solat.plist in Resources */,
+				6E66D38D150246C9001BAE53 /* background.png in Resources */,
+				6E66D38E150246C9001BAE53 /* background@2x.png in Resources */,
+				6E66D393150246C9001BAE53 /* headerView.png in Resources */,
+				6E66D394150246C9001BAE53 /* headerView@2x.png in Resources */,
+				6E4C77351510895900B46D7A /* Default.png in Resources */,
+				6E4C77361510895900B46D7A /* Default@2x.png in Resources */,
+				6E4C77371510895900B46D7A /* nav_bar.png in Resources */,
+				6E4C77381510895900B46D7A /* nav_bar@2x.png in Resources */,
+				6E640A551513C1550030B1F1 /* Settings.bundle in Resources */,
+				6EC72AD81539918100EA8132 /* toolbar_img.png in Resources */,
+				6EC72AD91539918100EA8132 /* toolbar_img@2x.png in Resources */,
+				6EE54957156E2D4A00CAA0EF /* btn_settings.png in Resources */,
+				6EE54958156E2D4A00CAA0EF /* btn_settings@2x.png in Resources */,
+				6E15B29415C7D08700789D78 /* SettingsViewController.xib in Resources */,
+				6E14569515C7DC94005AC6EA /* bg_settings.png in Resources */,
+				6E14569615C7DC94005AC6EA /* bg_settings@2x.png in Resources */,
+				6E779544160F49B6009504D9 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E6C918C152A0B91004FB62C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F86DBA314F8E20500606189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F86DBB814F8E20500606189 /* main.m in Sources */,
+				9F86DBBC14F8E20500606189 /* AppDelegate.m in Sources */,
+				9F86DBBF14F8E20500606189 /* KawasanViewController.m in Sources */,
+				6EB5F5171500F31F00AF21BA /* JakimPrayerTime.m in Sources */,
+				6EB5F5181500F31F00AF21BA /* JakimSolatParser.m in Sources */,
+				6EB5F5191500F31F00AF21BA /* XPathQuery.m in Sources */,
+				6EB5F51D1500F3F200AF21BA /* WaktuSolatViewController.m in Sources */,
+				6E15B29315C7D08700789D78 /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F86DBB414F8E20500606189 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F86DBB514F8E20500606189 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9F86DBC014F8E20500606189 /* KawasanViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F86DBC114F8E20500606189 /* en */,
+			);
+			name = KawasanViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F86DBC314F8E20500606189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Muhammad Syahmi Ismail (NSNRCCJ852)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "83EBA4F8-2B0C-42DA-8132-7A09E1B5B474";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F86DBC414F8E20500606189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Muhammad Syahmi Ismail (NSNRCCJ852)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "83EBA4F8-2B0C-42DA-8132-7A09E1B5B474";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F86DBC614F8E20500606189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaktuSolat/WaktuSolat-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
+				INFOPLIST_FILE = "WaktuSolat/WaktuSolat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9F86DBC714F8E20500606189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaktuSolat/WaktuSolat-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
+				INFOPLIST_FILE = "WaktuSolat/WaktuSolat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F86DBA114F8E20500606189 /* Build configuration list for PBXProject "WaktuSolat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F86DBC314F8E20500606189 /* Debug */,
+				9F86DBC414F8E20500606189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F86DBC514F8E20500606189 /* Build configuration list for PBXNativeTarget "WaktuSolat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F86DBC614F8E20500606189 /* Debug */,
+				9F86DBC714F8E20500606189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F86DB9E14F8E20500606189 /* Project object */;
+}

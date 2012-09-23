@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>eSolat</key>
+	<dict>
+		<key>Johor</key>
+		<array>
+			<array>
+				<string>Kota Tinggi, Mersing, Johor Bahru</string>
+				<string>jhr02</string>
+			</array>
+			<array>
+				<string>Batu Pahat, Muar, Segamat, Gemas</string>
+				<string>jhr04</string>
+			</array>
+			<array>
+				<string>Kluang dan Pontian</string>
+				<string>jhr03</string>
+			</array>
+			<array>
+				<string>Pulau Aur dan Pemanggil</string>
+				<string>jhr01</string>
+			</array>
+		</array>
+		<key>Kedah</key>
+		<array>
+			<array>
+				<string>Puncak Gunung Jerai</string>
+				<string>kdh06</string>
+			</array>
+			<array>
+				<string>Kota Setar, Kubang Pasu, Pokok Sena</string>
+				<string>kdh01</string>
+			</array>
+			<array>
+				<string>Langkawi</string>
+				<string>kdh05</string>
+			</array>
+			<array>
+				<string>Pendang, Kuala Muda, Yan</string>
+				<string>kdh02</string>
+			</array>
+			<array>
+				<string>Padang Terap, Sik, Baling</string>
+				<string>kdh03</string>
+			</array>
+			<array>
+				<string>Kulim, Bandar Baharu</string>
+				<string>kdh04</string>
+			</array>
+		</array>
+		<key>Kelantan</key>
+		<array>
+			<array>
+				<string>Jeli, Gua Musang (Mukim Galas, Bertam)</string>
+				<string>ktn03</string>
+			</array>
+			<array>
+				<string>Kota Bharu, Bachok, Pasir Puteh, Tumpat, Pasir Mas, Tnh. Merah, Machang, Kuala Krai, Mukim Chiku</string>
+				<string>ktn01</string>
+			</array>
+		</array>
+		<key>Melaka</key>
+		<array>
+			<array>
+				<string>Bandar Melaka, Alor Gajah, Jasin, Masjid Tanah, Merlimau, Nyalas</string>
+				<string>mlk01</string>
+			</array>
+		</array>
+		<key>Negeri Sembilan</key>
+		<array>
+			<array>
+				<string>Port Dickson, Seremban, Kuala Pilah, Jelebu, Rembau</string>
+				<string>ngs02</string>
+			</array>
+			<array>
+				<string>Jempol, Tampin</string>
+				<string>ngs01</string>
+			</array>
+		</array>
+		<key>Pahang</key>
+		<array>
+			<array>
+				<string>Genting Sempah, Janda Baik, Bukit Tinggi</string>
+				<string>phg05</string>
+			</array>
+			<array>
+				<string>Bentong, Raub, Kuala Lipis</string>
+				<string>phg04</string>
+			</array>
+			<array>
+				<string>Maran, Chenor, Temerloh, Bera, Jerantut</string>
+				<string>phg03</string>
+			</array>
+			<array>
+				<string>Bukit Fraser, Genting Higlands, Cameron Higlands</string>
+				<string>phg06</string>
+			</array>
+			<array>
+				<string>Kuantan, Pekan, Rompin, Muadzam Shah</string>
+				<string>phg02</string>
+			</array>
+			<array>
+				<string>Pulau Tioman</string>
+				<string>phg01</string>
+			</array>
+		</array>
+		<key>Perak</key>
+		<array>
+			<array>
+				<string>Bukit Larut</string>
+				<string>prk07</string>
+			</array>
+			<array>
+				<string>Ipoh, Batu Gajah, Kampar, Sg. Siput dan Kuala Kangsar</string>
+				<string>prk02</string>
+			</array>
+			<array>
+				<string>Tapah, Slim River dan Tanjung Malim</string>
+				<string>prk01</string>
+			</array>
+			<array>
+				<string>Pengkalan Hulu, Grik dan Lenggong</string>
+				<string>prk03</string>
+			</array>
+			<array>
+				<string>Temengor dan Belum</string>
+				<string>prk04</string>
+			</array>
+			<array>
+				<string>Teluk Intan, Bagan Datoh, Kg. Gajah, Sri Iskandar, Beruas,Parit,Lumut,Setiawan dan Pulau Pangkor</string>
+				<string>prk05</string>
+			</array>
+			<array>
+				<string>Selama, Taiping, Bagan Serai dan Parit Buntar</string>
+				<string>prk06</string>
+			</array>
+		</array>
+		<key>Perlis</key>
+		<array>
+			<array>
+				<string>Kangar, Padang Besar, Arau</string>
+				<string>pls01</string>
+			</array>
+		</array>
+		<key>Pulau Pinang</key>
+		<array>
+			<array>
+				<string>Seluruh Negeri Pulau Pinang</string>
+				<string>png01</string>
+			</array>
+		</array>
+		<key>Sabah</key>
+		<array>
+			<array>
+				<string>Zon 9 - Sipitang, Membakut, Beaufort, Kuala Penyu, Weston, Tenom, Long Pa Sia</string>
+				<string>sbh09</string>
+			</array>
+			<array>
+				<string>Zon 8 - Pensiangan, Keningau, Tambunan, Nabawan</string>
+				<string>sbh08</string>
+			</array>
+			<array>
+				<string>Zon 7 - Papar, Ranau, Kota Belud, Tuaran, Penampang, Kota Kinabalu</string>
+				<string>sbh07</string>
+			</array>
+			<array>
+				<string>Zon 6 - Gunung Kinabalu</string>
+				<string>sbh06</string>
+			</array>
+			<array>
+				<string>Zon 5 - Kudat, Kota Marudu, Pitas, Pulau Banggi</string>
+				<string>sbh05</string>
+			</array>
+			<array>
+				<string>Zon 3 - Lahad Datu, Kunak, Silabukan, Tungku, Sahabat, Semporna</string>
+				<string>sbh03</string>
+			</array>
+			<array>
+				<string>Zon 2 - Pinangah, Terusan, Beluran, Kuamut, Telupit</string>
+				<string>sbh02</string>
+			</array>
+			<array>
+				<string>Zon 1 - Sandakan, Bdr. Bkt. Garam, Semawang, Temanggong, Tambisan</string>
+				<string>sbh01</string>
+			</array>
+			<array>
+				<string>Zon 4 - Tawau, Balong, Merotai, Kalabakan</string>
+				<string>sbh04</string>
+			</array>
+		</array>
+		<key>Sarawak</key>
+		<array>
+			<array>
+				<string>Zon 1 - Limbang, Sundar, Terusan, Lawas</string>
+				<string>swk01</string>
+			</array>
+			<array>
+				<string>Zon 8 - Kuching, Bau, Lundu, Sematan</string>
+				<string>swk08</string>
+			</array>
+			<array>
+				<string>Zon 7 - Samarahan, Simunjan, Serian, Sebuyau, Meludam</string>
+				<string>swk07</string>
+			</array>
+			<array>
+				<string>Zon 6 - Kabong, Lingga, Sri Aman, Engkelili, Betong, Spaoh, Pusa, Saratok, Roban, Debak</string>
+				<string>swk06</string>
+			</array>
+			<array>
+				<string>Zon 5 - Belawai, Matu, Daro, Sarikei, Julau, Bitangor, Rajang</string>
+				<string>swk05</string>
+			</array>
+			<array>
+				<string>Zon 4 - Igan, Kanowit, Sibu, Dalat, Oya</string>
+				<string>swk04</string>
+			</array>
+			<array>
+				<string>Zon 3 - Song, Belingan, Sebauh, Bintulu, Tatau, Kapit</string>
+				<string>swk03</string>
+			</array>
+			<array>
+				<string>Zon 2 - Niah, Belaga, Sibuti, Miri, Bekenu, Marudi</string>
+				<string>swk02</string>
+			</array>
+		</array>
+		<key>Selangor dan Wilayah Persekutuan</key>
+		<array>
+			<array>
+				<string>Gombak, H. Selangor, Rawang, H. Langat, Sepang, Petaling, S. Alam</string>
+				<string>sgr01</string>
+			</array>
+			<array>
+				<string>Sabak Bernam, Kuala Selangor, Klang, Kuala Langat</string>
+				<string>sgr02</string>
+			</array>
+			<array>
+				<string>Kuala Lumpur</string>
+				<string>sgr03</string>
+			</array>
+			<array>
+				<string>Putrajaya</string>
+				<string>sgr04</string>
+			</array>
+		</array>
+		<key>Terengganu</key>
+		<array>
+			<array>
+				<string>Kuala Terengganu, Marang</string>
+				<string>trg01</string>
+			</array>
+			<array>
+				<string>Kemaman, Dungun</string>
+				<string>trg04</string>
+			</array>
+			<array>
+				<string>Hulu Terengganu</string>
+				<string>trg03</string>
+			</array>
+			<array>
+				<string>Besut, Setiu</string>
+				<string>trg02</string>
+			</array>
+		</array>
+		<key>Wilayah Persekutuan Labuan</key>
+		<array>
+			<array>
+				<string>Labuan</string>
+				<string>wly02</string>
+			</array>
+		</array>
+	</dict>
+</dict>
+</plist>
