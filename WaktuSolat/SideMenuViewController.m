@@ -54,6 +54,10 @@
     } if(indexPath.row == 2) {
         cell.textLabel.text = [NSString stringWithFormat:@"Qibla"];
         cell.imageView.image = [UIImage imageNamed:@"icnQibla.png"];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"proBadge.png"]];
+        imageView.frame = CGRectMake(90, 13, 47, 24);
+        [cell.contentView addSubview:imageView];
+        [imageView release];
     } if(indexPath.row == 3) {
         cell.textLabel.text = [NSString stringWithFormat:@"Notifications"];
         cell.imageView.image = [UIImage imageNamed:@"icnNotification.png"];
