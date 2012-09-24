@@ -46,8 +46,6 @@
 		6E7795BE160F8DFF009504D9 /* mainBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795BC160F8DFF009504D9 /* mainBackground@2x.png */; };
 		6E7795CD160F9FAE009504D9 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795C4160F9FAE009504D9 /* back-arrow.png */; };
 		6E7795CE160F9FAE009504D9 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795C5160F9FAE009504D9 /* back-arrow@2x.png */; };
-		6E7795CF160F9FAE009504D9 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795C6160F9FAE009504D9 /* menu-icon.png */; };
-		6E7795D0160F9FAE009504D9 /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795C7160F9FAE009504D9 /* menu-icon@2x.png */; };
 		6E7795D1160F9FAE009504D9 /* MFSideMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7795CA160F9FAE009504D9 /* MFSideMenuManager.m */; };
 		6E7795D2160F9FAE009504D9 /* UIViewController+MFSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7795CC160F9FAE009504D9 /* UIViewController+MFSideMenu.m */; };
 		6E7795D9160FA040009504D9 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7795D8160FA040009504D9 /* SideMenuViewController.m */; };
@@ -135,8 +133,6 @@
 		6E7795BC160F8DFF009504D9 /* mainBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainBackground@2x.png"; path = "WaktuSolat/mainBackground@2x.png"; sourceTree = "<group>"; };
 		6E7795C4160F9FAE009504D9 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
 		6E7795C5160F9FAE009504D9 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
-		6E7795C6160F9FAE009504D9 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
-		6E7795C7160F9FAE009504D9 /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		6E7795C8160F9FAE009504D9 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
 		6E7795C9160F9FAE009504D9 /* MFSideMenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuManager.h; sourceTree = "<group>"; };
 		6E7795CA160F9FAE009504D9 /* MFSideMenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuManager.m; sourceTree = "<group>"; };
@@ -251,16 +247,13 @@
 			children = (
 				6E7795C4160F9FAE009504D9 /* back-arrow.png */,
 				6E7795C5160F9FAE009504D9 /* back-arrow@2x.png */,
-				6E7795C6160F9FAE009504D9 /* menu-icon.png */,
-				6E7795C7160F9FAE009504D9 /* menu-icon@2x.png */,
 				6E7795C8160F9FAE009504D9 /* MFSideMenu.h */,
 				6E7795C9160F9FAE009504D9 /* MFSideMenuManager.h */,
 				6E7795CA160F9FAE009504D9 /* MFSideMenuManager.m */,
 				6E7795CB160F9FAE009504D9 /* UIViewController+MFSideMenu.h */,
 				6E7795CC160F9FAE009504D9 /* UIViewController+MFSideMenu.m */,
 			);
-			name = MFSideMenu;
-			path = WaktuSolat/MFSideMenu;
+			path = MFSideMenu;
 			sourceTree = "<group>";
 		};
 		6EB5F5031500EFF600AF21BA /* Images */ = {
@@ -331,7 +324,6 @@
 		9F86DB9C14F8E20500606189 = {
 			isa = PBXGroup;
 			children = (
-				6E7795C3160F9FAE009504D9 /* MFSideMenu */,
 				9F86DBB114F8E20500606189 /* WaktuSolat */,
 				9F86DBAA14F8E20500606189 /* Frameworks */,
 				9F86DBA814F8E20500606189 /* Products */,
@@ -363,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				6E66D3621501FC4C001BAE53 /* JakimSolatWrapper */,
+				6E7795C3160F9FAE009504D9 /* MFSideMenu */,
 				6E5AB25315CF21CD00CECDE3 /* Classes */,
 				6EB5F5031500EFF600AF21BA /* Images */,
 				9F86DBB214F8E20500606189 /* Supporting Files */,
@@ -482,8 +475,6 @@
 				6E7795BE160F8DFF009504D9 /* mainBackground@2x.png in Resources */,
 				6E7795CD160F9FAE009504D9 /* back-arrow.png in Resources */,
 				6E7795CE160F9FAE009504D9 /* back-arrow@2x.png in Resources */,
-				6E7795CF160F9FAE009504D9 /* menu-icon.png in Resources */,
-				6E7795D0160F9FAE009504D9 /* menu-icon@2x.png in Resources */,
 				6E7795DC160FA818009504D9 /* sidebarCell.png in Resources */,
 				6E7795DD160FA818009504D9 /* sidebarCell@2x.png in Resources */,
 				6E7795E0160FA9C1009504D9 /* sidebarCellSelected.png in Resources */,

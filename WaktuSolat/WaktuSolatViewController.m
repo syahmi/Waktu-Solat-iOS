@@ -160,7 +160,8 @@
     
     if(cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
-        cell.detailTextLabel.textColor = [UIColor colorWithRed:44/255.0 green:128/255.0 blue:33/255.0 alpha:1];
+        cell.textLabel.textColor = [UIColor colorWithRed:29/255.0 green:29/255.0 blue:29/255.0 alpha:1];
+        cell.detailTextLabel.textColor = [UIColor colorWithRed:72/255.0 green:119/255.0 blue:60/255.0 alpha:1];
     } if ([indexPath section] == 0) {
         cell.backgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellBackground.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
         if(indexPath.row == 0) {
