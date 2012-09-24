@@ -88,7 +88,7 @@
     if(cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier] autorelease];
         cell.backgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellBackgroundLocation.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
-        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
+        cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:16];
         cell.textLabel.textColor = [UIColor colorWithRed:69/255.0 green:69/255.0 blue:69/255.0 alpha:1];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
@@ -117,9 +117,9 @@
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 1, 320, 20)];
     titleLabel.text = [self tableView:tableView titleForHeaderInSection:section];
     titleLabel.shadowColor = [UIColor whiteColor];
-    titleLabel.shadowOffset = CGSizeMake(0.5, 0.5);
+    titleLabel.shadowOffset = CGSizeMake(0, 0.5);
     titleLabel.backgroundColor = [UIColor clearColor];
-    titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:12];
+    titleLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:12];
     titleLabel.textColor = [UIColor blackColor];
     [headerView addSubview:titleLabel];
     

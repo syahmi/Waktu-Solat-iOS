@@ -43,8 +43,8 @@
         cell.selectedBackgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"sidebarCellSelected.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.shadowColor = [UIColor blackColor];
-        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:17];
-        cell.textLabel.shadowOffset = CGSizeMake(0.5, 0.5);
+        cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:17];
+        cell.textLabel.shadowOffset = CGSizeMake(0, 0.5);
     } if(indexPath.row == 0) {
         cell.textLabel.text = [NSString stringWithFormat:@"Main"];
         cell.imageView.image = [UIImage imageNamed:@"icnHome.png"];

@@ -90,10 +90,10 @@
     
     UILabel *locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 40)];
     locationLabel.backgroundColor = [UIColor clearColor];
-    locationLabel.font = [UIFont fontWithName:@"Helvetica" size:12];
+    locationLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:12];
     locationLabel.textColor = [UIColor whiteColor];
     locationLabel.shadowColor = [UIColor blackColor];
-    locationLabel.shadowOffset = CGSizeMake(0.5, 0.5);
+    locationLabel.shadowOffset = CGSizeMake(0, 1);
     locationLabel.textAlignment = UITextAlignmentCenter;
     locationLabel.numberOfLines = 2;
     locationLabel.lineBreakMode = UILineBreakModeWordWrap;
@@ -113,23 +113,23 @@
     
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 20)];
     titleLabel.textAlignment = UITextAlignmentCenter;
-    titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:18];
+    titleLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:18];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.text = @"Waktu Solat";
     titleLabel.shadowColor = [UIColor blackColor];
-    titleLabel.shadowOffset = CGSizeMake(0.5, 0.5);
+    titleLabel.shadowOffset = CGSizeMake(0, 1);
     [titleView addSubview:titleLabel];
     [titleLabel release];
     
     UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 200, 14)];
     dateLabel.textAlignment = UITextAlignmentCenter;
-    dateLabel.font = [UIFont fontWithName:@"Helvetica" size:11];
+    dateLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:11];
     dateLabel.backgroundColor = [UIColor clearColor];
     dateLabel.textColor = [UIColor whiteColor];
     dateLabel.text = [data objectForKey:@"Date"];
     dateLabel.shadowColor = [UIColor blackColor];
-    dateLabel.shadowOffset = CGSizeMake(0.5, 0.5);
+    dateLabel.shadowOffset = CGSizeMake(0, 1);
     [titleView addSubview:dateLabel];
     [dateLabel release];
     
@@ -161,7 +161,9 @@
     if(cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
         cell.textLabel.textColor = [UIColor colorWithRed:29/255.0 green:29/255.0 blue:29/255.0 alpha:1];
+        cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:20];
         cell.detailTextLabel.textColor = [UIColor colorWithRed:72/255.0 green:119/255.0 blue:60/255.0 alpha:1];
+        cell.detailTextLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:18];
     } if ([indexPath section] == 0) {
         cell.backgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellBackground.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
         if(indexPath.row == 0) {

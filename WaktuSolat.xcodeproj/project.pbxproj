@@ -69,6 +69,8 @@
 		6E77960D160FC712009504D9 /* icnHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77960B160FC712009504D9 /* icnHome@2x.png */; };
 		6E779610160FCB1E009504D9 /* cellBackgroundLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77960E160FCB1D009504D9 /* cellBackgroundLocation.png */; };
 		6E779611160FCB1E009504D9 /* cellBackgroundLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E77960F160FCB1E009504D9 /* cellBackgroundLocation@2x.png */; };
+		6E779613160FFF0A009504D9 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6E779612160FFF0A009504D9 /* ProximaNova-Bold.otf */; };
+		6E77961516100077009504D9 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6E77961416100077009504D9 /* ProximaNova-Semibold.otf */; };
 		6EB5F5061500F1AA00AF21BA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB5F5051500F1AA00AF21BA /* libxml2.dylib */; };
 		6EB5F5091500F2AC00AF21BA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5071500F2AC00AF21BA /* icon.png */; };
 		6EB5F50A1500F2AC00AF21BA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5081500F2AC00AF21BA /* icon@2x.png */; };
@@ -160,6 +162,8 @@
 		6E77960B160FC712009504D9 /* icnHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icnHome@2x.png"; path = "WaktuSolat/icnHome@2x.png"; sourceTree = "<group>"; };
 		6E77960E160FCB1D009504D9 /* cellBackgroundLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBackgroundLocation.png; path = WaktuSolat/cellBackgroundLocation.png; sourceTree = "<group>"; };
 		6E77960F160FCB1E009504D9 /* cellBackgroundLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cellBackgroundLocation@2x.png"; path = "WaktuSolat/cellBackgroundLocation@2x.png"; sourceTree = "<group>"; };
+		6E779612160FFF0A009504D9 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		6E77961416100077009504D9 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
 		6EB5F5051500F1AA00AF21BA /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		6EB5F5071500F2AC00AF21BA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = WaktuSolat/icon.png; sourceTree = "<group>"; };
 		6EB5F5081500F2AC00AF21BA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "WaktuSolat/icon@2x.png"; sourceTree = "<group>"; };
@@ -369,6 +373,8 @@
 		9F86DBB214F8E20500606189 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E77961416100077009504D9 /* ProximaNova-Semibold.otf */,
+				6E779612160FFF0A009504D9 /* ProximaNova-Bold.otf */,
 				9F86DBB314F8E20500606189 /* WaktuSolat-Info.plist */,
 				9F86DBB414F8E20500606189 /* InfoPlist.strings */,
 				9F86DBB714F8E20500606189 /* main.m */,
@@ -495,6 +501,8 @@
 				6E77960D160FC712009504D9 /* icnHome@2x.png in Resources */,
 				6E779610160FCB1E009504D9 /* cellBackgroundLocation.png in Resources */,
 				6E779611160FCB1E009504D9 /* cellBackgroundLocation@2x.png in Resources */,
+				6E779613160FFF0A009504D9 /* ProximaNova-Bold.otf in Resources */,
+				6E77961516100077009504D9 /* ProximaNova-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
