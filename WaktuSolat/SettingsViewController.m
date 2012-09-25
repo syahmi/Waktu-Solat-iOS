@@ -19,12 +19,13 @@
 {
     [super viewDidLoad];
     
-    NSArray *section1 = [NSArray arrayWithObjects:@"Location", @"Notifications", @"Time Format", nil];
-    NSArray *section2 = [NSArray arrayWithObjects:@"Source Code", @"License", @"Support", nil];
+    NSArray *section1 = [NSArray arrayWithObjects:@"Date Format", @"12H Time Format", nil];
+    NSArray *section2 = [NSArray arrayWithObjects:@"Licenses", @"Support", nil];
+    NSArray *section3 = [NSArray arrayWithObjects:@"Follow on Twitter", @"Review on iTunes", @"Visit our Website", nil];
     
     self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
     
-    items = [[NSMutableArray alloc] initWithObjects:section1, section2, nil];
+    items = [[NSMutableArray alloc] initWithObjects:section1, section2, section3, nil];
     window = [[UIApplication sharedApplication] keyWindow];
     
     self.navigationItem.title = @"Settings";
@@ -40,6 +41,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
     self.settingsView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_settings.png"]];
 }
 
@@ -70,7 +72,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -82,20 +84,27 @@
 {
     if(indexPath.section == 0) {
         if(indexPath.row == 0) {
-            KawasanViewController *location = [[KawasanViewController alloc] initWithNibName:@"KawasanViewController" bundle:nil];
-            [self.navigationController pushViewController:location animated:YES];
+//            KawasanViewController *location = [[KawasanViewController alloc] initWithNibName:@"KawasanViewController" bundle:nil];
+//            [self.navigationController pushViewController:location animated:YES];
         } else if(indexPath.row == 1) {
             /* Add some function here */
         }
-    } else if(indexPath.section == 1) {
+    } if(indexPath.section == 1) {
         if(indexPath.row == 0) {
             /* Add some function here */
         } else if(indexPath.row == 1) {
-            /* Add some function here */
-        } else if(indexPath.row == 2) {
             [self showEmailModalView];
         }
+    } else if(indexPath.section == 2) {
+        if(indexPath.row == 0) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=waktuSolatApp"]];
+        } else if(indexPath.row == 1) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/my/app/waktu-solat/id507750415?mt=8"]];
+        }
     }
+    
+    NSIndexPath *tableSelection = [self.settingsView indexPathForSelectedRow];
+    [self.settingsView deselectRowAtIndexPath:tableSelection animated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -104,11 +113,15 @@
     
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cells"] autorelease];
+        cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:17];
+        cell.textLabel.textColor = [UIColor colorWithRed:69/255.0 green:69/255.0 blue:69/255.0 alpha:1];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } if ([indexPath section] == 0) {
-        if(indexPath.row == 2) {
+        if(indexPath.row == 1) {
             cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cells"] autorelease];
+            cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:17];
+            cell.textLabel.textColor = [UIColor colorWithRed:69/255.0 green:69/255.0 blue:69/255.0 alpha:1];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             UISwitch *switchView = [[UISwitch alloc] initWithFrame:CGRectZero];
             switchView.onTintColor = [UIColor colorWithRed:74/255.0 green:158/255.0 blue:55/255.0 alpha:1];
@@ -144,12 +157,19 @@
         return @"";
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    if (section == 1)
-        return @"Version 2.0";
-    else
-        return @"";
+    UIView *headerView = [[UIView alloc] init];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 3, 320, 20)];
+    titleLabel.text = [self tableView:tableView titleForHeaderInSection:section];
+    titleLabel.shadowColor = [UIColor whiteColor];
+    titleLabel.shadowOffset = CGSizeMake(0, 1);
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:17];
+    titleLabel.textColor = [UIColor colorWithRed:72/255.0 green:119/255.0 blue:60/255.0 alpha:1];
+    [headerView addSubview:titleLabel];
+    
+    return headerView;
 }
 
 - (void)showEmailModalView

@@ -29,7 +29,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 7;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,9 +65,6 @@
         cell.textLabel.text = [NSString stringWithFormat:@"Settings"];
         cell.imageView.image = [UIImage imageNamed:@"icnSettings.png"];
     } if(indexPath.row == 5) {
-        cell.textLabel.text = [NSString stringWithFormat:@"Feedback"];
-        cell.imageView.image = [UIImage imageNamed:@"icnFeedback.png"];
-    } if(indexPath.row == 6) {
         cell.textLabel.text = [NSString stringWithFormat:@"Source Code"];
         cell.imageView.image = [UIImage imageNamed:@"icnCode.png"];
     }
@@ -84,22 +81,27 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if(indexPath.section == 0) {
-        if(indexPath.row == 0) {
-            WaktuSolatViewController *waktuSolatView = [[WaktuSolatViewController alloc] initWithNibName:@"WaktuSolatViewController" bundle:nil];
-            [self.navigationController pushViewController:waktuSolatView animated:YES];
-            
-            NSArray *controllers = [NSArray arrayWithObject:waktuSolatView];
-            [MFSideMenuManager sharedManager].navigationController.viewControllers = controllers;
-            [MFSideMenuManager sharedManager].navigationController.menuState = MFSideMenuStateHidden;
-        } else if(indexPath.row == 1) {
-            KawasanViewController *location = [[KawasanViewController alloc] initWithNibName:@"KawasanViewController" bundle:nil];
-            [self.navigationController pushViewController:location animated:YES];
-            
-            NSArray *controllers = [NSArray arrayWithObject:location];
-            [MFSideMenuManager sharedManager].navigationController.viewControllers = controllers;
-            [MFSideMenuManager sharedManager].navigationController.menuState = MFSideMenuStateHidden;
-        }
+    if(indexPath.row == 0) {
+        WaktuSolatViewController *waktuSolatView = [[WaktuSolatViewController alloc] initWithNibName:@"WaktuSolatViewController" bundle:nil];
+        [self.navigationController pushViewController:waktuSolatView animated:YES];
+        
+        NSArray *controllers = [NSArray arrayWithObject:waktuSolatView];
+        [MFSideMenuManager sharedManager].navigationController.viewControllers = controllers;
+        [MFSideMenuManager sharedManager].navigationController.menuState = MFSideMenuStateHidden;
+    } else if(indexPath.row == 1) {
+        KawasanViewController *location = [[KawasanViewController alloc] initWithNibName:@"KawasanViewController" bundle:nil];
+        [self.navigationController pushViewController:location animated:YES];
+        
+        NSArray *controllers = [NSArray arrayWithObject:location];
+        [MFSideMenuManager sharedManager].navigationController.viewControllers = controllers;
+        [MFSideMenuManager sharedManager].navigationController.menuState = MFSideMenuStateHidden;
+    } else if(indexPath.row == 4) {
+        SettingsViewController *settings = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+        [self.navigationController pushViewController:settings animated:YES];
+        
+        NSArray *controllers = [NSArray arrayWithObject:settings];
+        [MFSideMenuManager sharedManager].navigationController.viewControllers = controllers;
+        [MFSideMenuManager sharedManager].navigationController.menuState = MFSideMenuStateHidden;
     }
 }
 

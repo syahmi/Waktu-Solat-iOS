@@ -664,7 +664,7 @@
 				9F86DBC414F8E20500606189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9F86DBC514F8E20500606189 /* Build configuration list for PBXNativeTarget "WaktuSolat" */ = {
 			isa = XCConfigurationList;
@@ -673,7 +673,7 @@
 				9F86DBC714F8E20500606189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
