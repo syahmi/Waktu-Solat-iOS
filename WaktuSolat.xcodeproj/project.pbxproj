@@ -11,6 +11,8 @@
 		6E14569615C7DC94005AC6EA /* bg_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E14569415C7DC94005AC6EA /* bg_settings@2x.png */; };
 		6E15B29315C7D08700789D78 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E15B29115C7D08700789D78 /* SettingsViewController.m */; };
 		6E15B29415C7D08700789D78 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E15B29215C7D08700789D78 /* SettingsViewController.xib */; };
+		6E26408316123E9600527EB0 /* LicensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E26408116123E9600527EB0 /* LicensesViewController.m */; };
+		6E26408416123E9600527EB0 /* LicensesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E26408216123E9600527EB0 /* LicensesViewController.xib */; };
 		6E2974ED1505EC77001A2FEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2974EC1505EC77001A2FEE /* QuartzCore.framework */; };
 		6E4C77351510895900B46D7A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C77311510895900B46D7A /* Default.png */; };
 		6E4C77361510895900B46D7A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C77321510895900B46D7A /* Default@2x.png */; };
@@ -102,6 +104,9 @@
 		6E15B29015C7D08700789D78 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		6E15B29115C7D08700789D78 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		6E15B29215C7D08700789D78 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		6E26408016123E9600527EB0 /* LicensesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicensesViewController.h; sourceTree = "<group>"; };
+		6E26408116123E9600527EB0 /* LicensesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicensesViewController.m; sourceTree = "<group>"; };
+		6E26408216123E9600527EB0 /* LicensesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LicensesViewController.xib; sourceTree = "<group>"; };
 		6E2974EC1505EC77001A2FEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6E4C77311510895900B46D7A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = WaktuSolat/Default.png; sourceTree = "<group>"; };
 		6E4C77321510895900B46D7A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "WaktuSolat/Default@2x.png"; sourceTree = "<group>"; };
@@ -231,6 +236,9 @@
 				6E15B29015C7D08700789D78 /* SettingsViewController.h */,
 				6E15B29115C7D08700789D78 /* SettingsViewController.m */,
 				6E15B29215C7D08700789D78 /* SettingsViewController.xib */,
+				6E26408016123E9600527EB0 /* LicensesViewController.h */,
+				6E26408116123E9600527EB0 /* LicensesViewController.m */,
+				6E26408216123E9600527EB0 /* LicensesViewController.xib */,
 				6E7795D7160FA040009504D9 /* SideMenuViewController.h */,
 				6E7795D8160FA040009504D9 /* SideMenuViewController.m */,
 			);
@@ -511,6 +519,7 @@
 				6E77961516100077009504D9 /* ProximaNova-Semibold.otf in Resources */,
 				6E77961816100364009504D9 /* proBadge.png in Resources */,
 				6E77961916100364009504D9 /* proBadge@2x.png in Resources */,
+				6E26408416123E9600527EB0 /* LicensesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +557,7 @@
 				6E7795D1160F9FAE009504D9 /* MFSideMenuManager.m in Sources */,
 				6E7795D2160F9FAE009504D9 /* UIViewController+MFSideMenu.m in Sources */,
 				6E7795D9160FA040009504D9 /* SideMenuViewController.m in Sources */,
+				6E26408316123E9600527EB0 /* LicensesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

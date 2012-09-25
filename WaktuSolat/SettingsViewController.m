@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     NSArray *section1 = [NSArray arrayWithObjects:@"Date Format", @"12H Time Format", nil];
-    NSArray *section2 = [NSArray arrayWithObjects:@"Licenses", @"Support", nil];
+    NSArray *section2 = [NSArray arrayWithObjects:@"License", @"Support", nil];
     NSArray *section3 = [NSArray arrayWithObjects:@"Follow on Twitter", @"Review on iTunes", @"Visit our Website", nil];
     
     self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
@@ -91,7 +91,8 @@
         }
     } if(indexPath.section == 1) {
         if(indexPath.row == 0) {
-            /* Add some function here */
+            LicensesViewController *license = [[LicensesViewController alloc] init];
+            [self.navigationController pushViewController:license animated:YES];
         } else if(indexPath.row == 1) {
             [self showEmailModalView];
         }

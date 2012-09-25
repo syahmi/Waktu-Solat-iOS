@@ -10,6 +10,7 @@
 #import <MessageUI/MessageUI.h>
 #import "KawasanViewController.h"
 #import "WaktuSolatViewController.h"
+#import "LicensesViewController.h"
 
 @interface SettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     UIWindow *window;

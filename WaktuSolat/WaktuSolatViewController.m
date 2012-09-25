@@ -165,7 +165,7 @@
         cell.detailTextLabel.textColor = [UIColor colorWithRed:72/255.0 green:119/255.0 blue:60/255.0 alpha:1];
         cell.detailTextLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:18];
     } if ([indexPath section] == 0) {
-        cell.backgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"cellBackground.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
+        cell.backgroundView = [[[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"cellBackground.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]] autorelease];
         if(indexPath.row == 0) {
             cell.imageView.image = [UIImage imageNamed:@"imsak.png"];
         } if(indexPath.row == 1) {

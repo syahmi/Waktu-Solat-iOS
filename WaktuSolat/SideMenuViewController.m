@@ -39,7 +39,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        cell.backgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"sidebarCell.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
+        cell.backgroundView = [[[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"sidebarCell.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]] autorelease];
         cell.selectedBackgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"sidebarCellSelected.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.shadowColor = [UIColor blackColor];
