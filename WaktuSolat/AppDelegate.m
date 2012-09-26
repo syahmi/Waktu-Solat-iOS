@@ -68,10 +68,7 @@
     
     MenuOptions options = MenuButtonEnabled|BackButtonEnabled;
     // make sure to display the navigation controller before calling this
-    [MFSideMenuManager configureWithNavigationController:navigationController
-                                      sideMenuController:sideMenuViewController
-                                                menuSide:MenuLeftHandSide
-                                                 options:options];
+    [MFSideMenuManager configureWithNavigationController:navigationController sideMenuController:sideMenuViewController menuSide:MenuLeftHandSide options:options];
     
     [self _rateApp];
     [SideMenuViewController release];

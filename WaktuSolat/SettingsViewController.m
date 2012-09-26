@@ -55,13 +55,13 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
 	[super viewWillDisappear:animated];
-    
-    self.navigationController.toolbarHidden = NO;
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
+    
+    self.navigationController.toolbarHidden = YES;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -99,9 +99,15 @@
     } else if(indexPath.section == 2) {
         if(indexPath.row == 0) {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=waktuSolatApp"]];
-        } else if(indexPath.row == 1) {
+        } if(indexPath.row == 1) {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/my/app/waktu-solat/id507750415?mt=8"]];
+        } if(indexPath.row == 2) {
+            TSMiniWebBrowser *webBrowser = [[TSMiniWebBrowser alloc] initWithUrl:[NSURL URLWithString:@"http://www.waktusolatapp.com"]];
+            webBrowser.barStyle = UIBarStyleBlack;
+            webBrowser.showURLStringOnActionSheetTitle = NO;
+            [self.navigationController pushViewController:webBrowser animated:YES];
         }
+
     }
     
     NSIndexPath *tableSelection = [self.settingsView indexPathForSelectedRow];

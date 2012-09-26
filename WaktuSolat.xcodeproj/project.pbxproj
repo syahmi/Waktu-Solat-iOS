@@ -86,6 +86,14 @@
 		6EC72AD81539918100EA8132 /* toolbar_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC72AD61539918100EA8132 /* toolbar_img.png */; };
 		6EC72AD91539918100EA8132 /* toolbar_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC72AD71539918100EA8132 /* toolbar_img@2x.png */; };
 		6ECFFB4614F8E8FA00151025 /* eSolat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ECFFB4514F8E8FA00151025 /* eSolat.plist */; };
+		6EDDED8D1612C393008D6BCF /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED841612C393008D6BCF /* back_icon.png */; };
+		6EDDED8E1612C393008D6BCF /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED851612C393008D6BCF /* back_icon@2x.png */; };
+		6EDDED8F1612C393008D6BCF /* forward_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED861612C393008D6BCF /* forward_icon.png */; };
+		6EDDED901612C393008D6BCF /* forward_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED871612C393008D6BCF /* forward_icon@2x.png */; };
+		6EDDED911612C393008D6BCF /* reload_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED881612C393008D6BCF /* reload_icon.png */; };
+		6EDDED921612C393008D6BCF /* reload_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED891612C393008D6BCF /* reload_icon@2x.png */; };
+		6EDDED931612C393008D6BCF /* TSMiniWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDDED8B1612C393008D6BCF /* TSMiniWebBrowser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EDDED941612C393008D6BCF /* TSMiniWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED8C1612C393008D6BCF /* TSMiniWebBrowser.xib */; };
 		6EE54957156E2D4A00CAA0EF /* btn_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE54955156E2D4A00CAA0EF /* btn_settings.png */; };
 		6EE54958156E2D4A00CAA0EF /* btn_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE54956156E2D4A00CAA0EF /* btn_settings@2x.png */; };
 		9F86DBAC14F8E20500606189 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86DBAB14F8E20500606189 /* UIKit.framework */; };
@@ -188,6 +196,15 @@
 		6EC72AD61539918100EA8132 /* toolbar_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar_img.png; path = WaktuSolat/toolbar_img.png; sourceTree = "<group>"; };
 		6EC72AD71539918100EA8132 /* toolbar_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toolbar_img@2x.png"; path = "WaktuSolat/toolbar_img@2x.png"; sourceTree = "<group>"; };
 		6ECFFB4514F8E8FA00151025 /* eSolat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = eSolat.plist; sourceTree = "<group>"; };
+		6EDDED841612C393008D6BCF /* back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_icon.png; sourceTree = "<group>"; };
+		6EDDED851612C393008D6BCF /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
+		6EDDED861612C393008D6BCF /* forward_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward_icon.png; sourceTree = "<group>"; };
+		6EDDED871612C393008D6BCF /* forward_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward_icon@2x.png"; sourceTree = "<group>"; };
+		6EDDED881612C393008D6BCF /* reload_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload_icon.png; sourceTree = "<group>"; };
+		6EDDED891612C393008D6BCF /* reload_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reload_icon@2x.png"; sourceTree = "<group>"; };
+		6EDDED8A1612C393008D6BCF /* TSMiniWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMiniWebBrowser.h; sourceTree = "<group>"; };
+		6EDDED8B1612C393008D6BCF /* TSMiniWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMiniWebBrowser.m; sourceTree = "<group>"; };
+		6EDDED8C1612C393008D6BCF /* TSMiniWebBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMiniWebBrowser.xib; sourceTree = "<group>"; };
 		6EE54955156E2D4A00CAA0EF /* btn_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_settings.png; path = WaktuSolat/btn_settings.png; sourceTree = "<group>"; };
 		6EE54956156E2D4A00CAA0EF /* btn_settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_settings@2x.png"; path = "WaktuSolat/btn_settings@2x.png"; sourceTree = "<group>"; };
 		9F86DBA714F8E20500606189 /* WaktuSolat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaktuSolat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +356,30 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		6EDDED821612C393008D6BCF /* TSMiniWebBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				6EDDED831612C393008D6BCF /* images */,
+				6EDDED8A1612C393008D6BCF /* TSMiniWebBrowser.h */,
+				6EDDED8B1612C393008D6BCF /* TSMiniWebBrowser.m */,
+				6EDDED8C1612C393008D6BCF /* TSMiniWebBrowser.xib */,
+			);
+			path = TSMiniWebBrowser;
+			sourceTree = "<group>";
+		};
+		6EDDED831612C393008D6BCF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6EDDED841612C393008D6BCF /* back_icon.png */,
+				6EDDED851612C393008D6BCF /* back_icon@2x.png */,
+				6EDDED861612C393008D6BCF /* forward_icon.png */,
+				6EDDED871612C393008D6BCF /* forward_icon@2x.png */,
+				6EDDED881612C393008D6BCF /* reload_icon.png */,
+				6EDDED891612C393008D6BCF /* reload_icon@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		9F86DB9C14F8E20500606189 = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +413,7 @@
 		9F86DBB114F8E20500606189 /* WaktuSolat */ = {
 			isa = PBXGroup;
 			children = (
+				6EDDED821612C393008D6BCF /* TSMiniWebBrowser */,
 				6E66D3621501FC4C001BAE53 /* JakimSolatWrapper */,
 				6E7795C3160F9FAE009504D9 /* MFSideMenu */,
 				6E5AB25315CF21CD00CECDE3 /* Classes */,
@@ -520,6 +562,13 @@
 				6E77961816100364009504D9 /* proBadge.png in Resources */,
 				6E77961916100364009504D9 /* proBadge@2x.png in Resources */,
 				6E26408416123E9600527EB0 /* LicensesViewController.xib in Resources */,
+				6EDDED8D1612C393008D6BCF /* back_icon.png in Resources */,
+				6EDDED8E1612C393008D6BCF /* back_icon@2x.png in Resources */,
+				6EDDED8F1612C393008D6BCF /* forward_icon.png in Resources */,
+				6EDDED901612C393008D6BCF /* forward_icon@2x.png in Resources */,
+				6EDDED911612C393008D6BCF /* reload_icon.png in Resources */,
+				6EDDED921612C393008D6BCF /* reload_icon@2x.png in Resources */,
+				6EDDED941612C393008D6BCF /* TSMiniWebBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +607,7 @@
 				6E7795D2160F9FAE009504D9 /* UIViewController+MFSideMenu.m in Sources */,
 				6E7795D9160FA040009504D9 /* SideMenuViewController.m in Sources */,
 				6E26408316123E9600527EB0 /* LicensesViewController.m in Sources */,
+				6EDDED931612C393008D6BCF /* TSMiniWebBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

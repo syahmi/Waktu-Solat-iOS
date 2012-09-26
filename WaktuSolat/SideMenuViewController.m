@@ -102,6 +102,15 @@
         NSArray *controllers = [NSArray arrayWithObject:settings];
         [MFSideMenuManager sharedManager].navigationController.viewControllers = controllers;
         [MFSideMenuManager sharedManager].navigationController.menuState = MFSideMenuStateHidden;
+    } else if(indexPath.row == 5) {
+        TSMiniWebBrowser *sourceCode = [[TSMiniWebBrowser alloc] initWithUrl:[NSURL URLWithString:@"https://github.com/wutmedia/WaktuSolat"]];
+        sourceCode.barStyle = UIBarStyleBlack;
+        sourceCode.showURLStringOnActionSheetTitle = NO;
+        [self.navigationController pushViewController:sourceCode animated:YES];
+        
+        NSArray *controllers = [NSArray arrayWithObject:sourceCode];
+        [MFSideMenuManager sharedManager].navigationController.viewControllers = controllers;
+        [MFSideMenuManager sharedManager].navigationController.menuState = MFSideMenuStateHidden;
     }
 }
 

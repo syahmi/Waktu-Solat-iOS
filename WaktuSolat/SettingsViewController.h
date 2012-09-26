@@ -11,6 +11,7 @@
 #import "KawasanViewController.h"
 #import "WaktuSolatViewController.h"
 #import "LicensesViewController.h"
+#import "TSMiniWebBrowser.h"
 
 @interface SettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     UIWindow *window;
