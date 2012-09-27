@@ -47,9 +47,13 @@ static char velocityKey;
 }
 
 - (UIBarButtonItem *)backBarButtonItem {
-    return [[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-arrow"]
-                                             style:UIBarButtonItemStyleBordered target:self
-                                            action:@selector(backButtonPressed:)] autorelease];
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setFrame:CGRectMake(0, 0, 40, 22)];
+    [backButton addTarget:self action:@selector(toggleSideMenuPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setImage:[UIImage imageNamed:@"backButton.png"] forState:UIControlStateNormal];
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:backButton];
 }
 
 - (void) setupSideMenuBarButtonItem {
