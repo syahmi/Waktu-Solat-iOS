@@ -6,7 +6,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define kSidebarWidth 270
+#define kSidebarWidth 250
 
 typedef enum {
     MenuLeftHandSide, // show the menu on the left hand side
