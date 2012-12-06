@@ -71,7 +71,7 @@
     [MFSideMenuManager configureWithNavigationController:navigationController sideMenuController:sideMenuViewController menuSide:MenuLeftHandSide options:options];
     
     [self _rateApp];
-    [SideMenuViewController release];
+//    [SideMenuViewController release];
     
     return YES;
 }
