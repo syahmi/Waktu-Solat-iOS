@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JakimSolatParser.h"
 #import "SettingsViewController.h"
 
-@interface WaktuSolatViewController : UITableViewController <JakimSolatDelegate> {
+@interface WaktuSolatViewController : UITableViewController {
     NSMutableArray *waktuSolat;
     NSMutableArray *waktuSolatLabel;
     NSString *path;

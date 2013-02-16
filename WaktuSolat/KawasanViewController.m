@@ -72,12 +72,6 @@
     return [sortedKawasan objectAtIndex:section];
 }
 
-- (void)dealloc
-{
-    [kawasan release];
-    [sortedKawasan release];
-    [super dealloc];
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -86,8 +80,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     if(cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier] autorelease];
-        cell.backgroundView = [[[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"cellBackgroundLocation.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.backgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"cellBackgroundLocation.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]];
         cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:16];
         cell.textLabel.textColor = [UIColor colorWithRed:69/255.0 green:69/255.0 blue:69/255.0 alpha:1];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
@@ -105,7 +99,6 @@
     NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile: path];
     [data setObject:[[[kawasan objectForKey:[sortedKawasan objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row] objectAtIndex:1] forKey:@"Code"];
     [data writeToFile:path atomically:YES];
-    [data release];
     
     [self.navigationController popViewControllerAnimated:YES];
 }

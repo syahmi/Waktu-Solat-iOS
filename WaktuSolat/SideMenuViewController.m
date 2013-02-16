@@ -38,9 +38,9 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        cell.backgroundView = [[[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"sidebarCell.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]] autorelease];
-        cell.selectedBackgroundView = [ [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"sidebarCellSelected.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ]autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.backgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"sidebarCell.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]];
+        cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[ [UIImage imageNamed:@"sidebarCellSelected.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0] ];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.shadowColor = [UIColor blackColor];
         cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:17];
@@ -57,7 +57,6 @@
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"proBadge.png"]];
         imageView.frame = CGRectMake(90, 13, 47, 24);
         [cell.contentView addSubview:imageView];
-        [imageView release];
     } if(indexPath.row == 3) {
         cell.textLabel.text = [NSString stringWithFormat:@"Notifications"];
         cell.imageView.image = [UIImage imageNamed:@"icnNotification.png"];

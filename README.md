@@ -17,12 +17,11 @@ You should have received a copy of the GNU General Public License along with Wak
 
 # Todo
 
-- Create a simple wrapper class to fetch content from JAKIM e-solat portal.
-- Notification.
+- Local database.
+- Notifications.
 
 # Changes
 
-- 1.0.1: Added rate Waktu Solat popup. Modified launch images to full view and fixed minor bugs. 
 
 # Credit
 

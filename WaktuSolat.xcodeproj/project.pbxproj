@@ -46,8 +46,6 @@
 		6E7795BA160F8A1D009504D9 /* cellBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795B8160F8A1D009504D9 /* cellBackground@2x.png */; };
 		6E7795BD160F8DFF009504D9 /* mainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795BB160F8DFF009504D9 /* mainBackground.png */; };
 		6E7795BE160F8DFF009504D9 /* mainBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795BC160F8DFF009504D9 /* mainBackground@2x.png */; };
-		6E7795D1160F9FAE009504D9 /* MFSideMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7795CA160F9FAE009504D9 /* MFSideMenuManager.m */; };
-		6E7795D2160F9FAE009504D9 /* UIViewController+MFSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7795CC160F9FAE009504D9 /* UIViewController+MFSideMenu.m */; };
 		6E7795D9160FA040009504D9 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7795D8160FA040009504D9 /* SideMenuViewController.m */; };
 		6E7795DC160FA818009504D9 /* sidebarCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795DA160FA818009504D9 /* sidebarCell.png */; };
 		6E7795DD160FA818009504D9 /* sidebarCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E7795DB160FA818009504D9 /* sidebarCell@2x.png */; };
@@ -76,13 +74,12 @@
 		6EB5F5061500F1AA00AF21BA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB5F5051500F1AA00AF21BA /* libxml2.dylib */; };
 		6EB5F5091500F2AC00AF21BA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5071500F2AC00AF21BA /* icon.png */; };
 		6EB5F50A1500F2AC00AF21BA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F5081500F2AC00AF21BA /* icon@2x.png */; };
-		6EB5F5171500F31F00AF21BA /* JakimPrayerTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F5121500F31F00AF21BA /* JakimPrayerTime.m */; };
-		6EB5F5181500F31F00AF21BA /* JakimSolatParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F5141500F31F00AF21BA /* JakimSolatParser.m */; };
-		6EB5F5191500F31F00AF21BA /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F5161500F31F00AF21BA /* XPathQuery.m */; };
 		6EB5F51D1500F3F200AF21BA /* WaktuSolatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB5F51B1500F3F200AF21BA /* WaktuSolatViewController.m */; };
 		6EB5F51E1500F3F200AF21BA /* WaktuSolatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB5F51C1500F3F200AF21BA /* WaktuSolatViewController.xib */; };
 		6EC72AD81539918100EA8132 /* toolbar_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC72AD61539918100EA8132 /* toolbar_img.png */; };
 		6EC72AD91539918100EA8132 /* toolbar_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC72AD71539918100EA8132 /* toolbar_img@2x.png */; };
+		6ECDDAB21670FA1C00125CED /* MFSideMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECDDAAF1670FA1C00125CED /* MFSideMenuManager.m */; };
+		6ECDDAB31670FA1C00125CED /* UIViewController+MFSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECDDAB11670FA1C00125CED /* UIViewController+MFSideMenu.m */; };
 		6ECFFB4614F8E8FA00151025 /* eSolat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ECFFB4514F8E8FA00151025 /* eSolat.plist */; };
 		6EDDED8D1612C393008D6BCF /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED841612C393008D6BCF /* back_icon.png */; };
 		6EDDED8E1612C393008D6BCF /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED851612C393008D6BCF /* back_icon@2x.png */; };
@@ -90,7 +87,7 @@
 		6EDDED901612C393008D6BCF /* forward_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED871612C393008D6BCF /* forward_icon@2x.png */; };
 		6EDDED911612C393008D6BCF /* reload_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED881612C393008D6BCF /* reload_icon.png */; };
 		6EDDED921612C393008D6BCF /* reload_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED891612C393008D6BCF /* reload_icon@2x.png */; };
-		6EDDED931612C393008D6BCF /* TSMiniWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDDED8B1612C393008D6BCF /* TSMiniWebBrowser.m */; };
+		6EDDED931612C393008D6BCF /* TSMiniWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDDED8B1612C393008D6BCF /* TSMiniWebBrowser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6EDDED941612C393008D6BCF /* TSMiniWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDED8C1612C393008D6BCF /* TSMiniWebBrowser.xib */; };
 		6EE54957156E2D4A00CAA0EF /* btn_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE54955156E2D4A00CAA0EF /* btn_settings.png */; };
 		6EE54958156E2D4A00CAA0EF /* btn_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE54956156E2D4A00CAA0EF /* btn_settings@2x.png */; };
@@ -146,11 +143,6 @@
 		6E7795B8160F8A1D009504D9 /* cellBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cellBackground@2x.png"; path = "WaktuSolat/cellBackground@2x.png"; sourceTree = "<group>"; };
 		6E7795BB160F8DFF009504D9 /* mainBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBackground.png; path = WaktuSolat/mainBackground.png; sourceTree = "<group>"; };
 		6E7795BC160F8DFF009504D9 /* mainBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainBackground@2x.png"; path = "WaktuSolat/mainBackground@2x.png"; sourceTree = "<group>"; };
-		6E7795C8160F9FAE009504D9 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
-		6E7795C9160F9FAE009504D9 /* MFSideMenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuManager.h; sourceTree = "<group>"; };
-		6E7795CA160F9FAE009504D9 /* MFSideMenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuManager.m; sourceTree = "<group>"; };
-		6E7795CB160F9FAE009504D9 /* UIViewController+MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenu.h"; sourceTree = "<group>"; };
-		6E7795CC160F9FAE009504D9 /* UIViewController+MFSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenu.m"; sourceTree = "<group>"; };
 		6E7795D7160FA040009504D9 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
 		6E7795D8160FA040009504D9 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
 		6E7795DA160FA818009504D9 /* sidebarCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidebarCell.png; path = WaktuSolat/sidebarCell.png; sourceTree = "<group>"; };
@@ -180,17 +172,16 @@
 		6EB5F5051500F1AA00AF21BA /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		6EB5F5071500F2AC00AF21BA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = WaktuSolat/icon.png; sourceTree = "<group>"; };
 		6EB5F5081500F2AC00AF21BA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "WaktuSolat/icon@2x.png"; sourceTree = "<group>"; };
-		6EB5F5111500F31F00AF21BA /* JakimPrayerTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JakimPrayerTime.h; sourceTree = "<group>"; };
-		6EB5F5121500F31F00AF21BA /* JakimPrayerTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JakimPrayerTime.m; sourceTree = "<group>"; };
-		6EB5F5131500F31F00AF21BA /* JakimSolatParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JakimSolatParser.h; sourceTree = "<group>"; };
-		6EB5F5141500F31F00AF21BA /* JakimSolatParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JakimSolatParser.m; sourceTree = "<group>"; };
-		6EB5F5151500F31F00AF21BA /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
-		6EB5F5161500F31F00AF21BA /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		6EB5F51A1500F3F200AF21BA /* WaktuSolatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaktuSolatViewController.h; sourceTree = "<group>"; };
 		6EB5F51B1500F3F200AF21BA /* WaktuSolatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaktuSolatViewController.m; sourceTree = "<group>"; };
 		6EB5F51C1500F3F200AF21BA /* WaktuSolatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaktuSolatViewController.xib; sourceTree = "<group>"; };
 		6EC72AD61539918100EA8132 /* toolbar_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar_img.png; path = WaktuSolat/toolbar_img.png; sourceTree = "<group>"; };
 		6EC72AD71539918100EA8132 /* toolbar_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toolbar_img@2x.png"; path = "WaktuSolat/toolbar_img@2x.png"; sourceTree = "<group>"; };
+		6ECDDAAE1670FA1C00125CED /* MFSideMenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuManager.h; sourceTree = "<group>"; };
+		6ECDDAAF1670FA1C00125CED /* MFSideMenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuManager.m; sourceTree = "<group>"; };
+		6ECDDAB01670FA1C00125CED /* UIViewController+MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenu.h"; sourceTree = "<group>"; };
+		6ECDDAB11670FA1C00125CED /* UIViewController+MFSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenu.m"; sourceTree = "<group>"; };
+		6ECDDAB41670FA7400125CED /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
 		6ECFFB4514F8E8FA00151025 /* eSolat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = eSolat.plist; sourceTree = "<group>"; };
 		6EDDED841612C393008D6BCF /* back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_icon.png; sourceTree = "<group>"; };
 		6EDDED851612C393008D6BCF /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
@@ -256,31 +247,6 @@
 				6E7795D8160FA040009504D9 /* SideMenuViewController.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		6E66D3621501FC4C001BAE53 /* JakimSolatWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				6EB5F5111500F31F00AF21BA /* JakimPrayerTime.h */,
-				6EB5F5121500F31F00AF21BA /* JakimPrayerTime.m */,
-				6EB5F5131500F31F00AF21BA /* JakimSolatParser.h */,
-				6EB5F5141500F31F00AF21BA /* JakimSolatParser.m */,
-				6EB5F5151500F31F00AF21BA /* XPathQuery.h */,
-				6EB5F5161500F31F00AF21BA /* XPathQuery.m */,
-			);
-			name = JakimSolatWrapper;
-			sourceTree = "<group>";
-		};
-		6E7795C3160F9FAE009504D9 /* MFSideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				6E7795C8160F9FAE009504D9 /* MFSideMenu.h */,
-				6E7795C9160F9FAE009504D9 /* MFSideMenuManager.h */,
-				6E7795CA160F9FAE009504D9 /* MFSideMenuManager.m */,
-				6E7795CB160F9FAE009504D9 /* UIViewController+MFSideMenu.h */,
-				6E7795CC160F9FAE009504D9 /* UIViewController+MFSideMenu.m */,
-			);
-			path = MFSideMenu;
 			sourceTree = "<group>";
 		};
 		6EB5F5031500EFF600AF21BA /* Images */ = {
@@ -350,6 +316,18 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		6ECDDAAD1670FA1C00125CED /* MFSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6ECDDAB41670FA7400125CED /* MFSideMenu.h */,
+				6ECDDAAE1670FA1C00125CED /* MFSideMenuManager.h */,
+				6ECDDAAF1670FA1C00125CED /* MFSideMenuManager.m */,
+				6ECDDAB01670FA1C00125CED /* UIViewController+MFSideMenu.h */,
+				6ECDDAB11670FA1C00125CED /* UIViewController+MFSideMenu.m */,
+			);
+			path = MFSideMenu;
+			sourceTree = "<group>";
+		};
 		6EDDED821612C393008D6BCF /* TSMiniWebBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,8 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				6EDDED821612C393008D6BCF /* TSMiniWebBrowser */,
-				6E66D3621501FC4C001BAE53 /* JakimSolatWrapper */,
-				6E7795C3160F9FAE009504D9 /* MFSideMenu */,
+				6ECDDAAD1670FA1C00125CED /* MFSideMenu */,
 				6E5AB25315CF21CD00CECDE3 /* Classes */,
 				6EB5F5031500EFF600AF21BA /* Images */,
 				9F86DBB214F8E20500606189 /* Supporting Files */,
@@ -460,7 +437,7 @@
 		9F86DB9E14F8E20500606189 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Wutmedia;
 			};
 			buildConfigurationList = 9F86DBA114F8E20500606189 /* Build configuration list for PBXProject "WaktuSolat" */;
@@ -590,16 +567,13 @@
 				9F86DBB814F8E20500606189 /* main.m in Sources */,
 				9F86DBBC14F8E20500606189 /* AppDelegate.m in Sources */,
 				9F86DBBF14F8E20500606189 /* KawasanViewController.m in Sources */,
-				6EB5F5171500F31F00AF21BA /* JakimPrayerTime.m in Sources */,
-				6EB5F5181500F31F00AF21BA /* JakimSolatParser.m in Sources */,
-				6EB5F5191500F31F00AF21BA /* XPathQuery.m in Sources */,
 				6EB5F51D1500F3F200AF21BA /* WaktuSolatViewController.m in Sources */,
 				6E15B29315C7D08700789D78 /* SettingsViewController.m in Sources */,
-				6E7795D1160F9FAE009504D9 /* MFSideMenuManager.m in Sources */,
-				6E7795D2160F9FAE009504D9 /* UIViewController+MFSideMenu.m in Sources */,
 				6E7795D9160FA040009504D9 /* SideMenuViewController.m in Sources */,
 				6E26408316123E9600527EB0 /* LicensesViewController.m in Sources */,
 				6EDDED931612C393008D6BCF /* TSMiniWebBrowser.m in Sources */,
+				6ECDDAB21670FA1C00125CED /* MFSideMenuManager.m in Sources */,
+				6ECDDAB31670FA1C00125CED /* UIViewController+MFSideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +604,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Muhammad Syahmi Ismail (NSNRCCJ852)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -655,6 +633,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Muhammad Syahmi Ismail (NSNRCCJ852)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -673,6 +655,7 @@
 		9F86DBC614F8E20500606189 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -691,6 +674,7 @@
 		9F86DBC714F8E20500606189 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",

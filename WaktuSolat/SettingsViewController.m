@@ -23,7 +23,7 @@
     NSArray *section2 = [NSArray arrayWithObjects:@"License", @"Support", nil];
     NSArray *section3 = [NSArray arrayWithObjects:@"Follow on Twitter", @"Review on iTunes", @"Visit our Website", nil];
     
-    self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil];
     
     items = [[NSMutableArray alloc] initWithObjects:section1, section2, section3, nil];
     window = [[UIApplication sharedApplication] keyWindow];
@@ -119,14 +119,14 @@
     UITableViewCell *cell = [self.settingsView dequeueReusableCellWithIdentifier:@"Cell"];
     
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cells"] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cells"];
         cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:17];
         cell.textLabel.textColor = [UIColor colorWithRed:69/255.0 green:69/255.0 blue:69/255.0 alpha:1];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } if ([indexPath section] == 0) {
         if(indexPath.row == 1) {
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cells"] autorelease];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cells"];
             cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:17];
             cell.textLabel.textColor = [UIColor colorWithRed:69/255.0 green:69/255.0 blue:69/255.0 alpha:1];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -135,7 +135,6 @@
             [switchView addTarget:self action:@selector(updateSwitchAtIndexPath:) forControlEvents:UIControlEventValueChanged];
             cell.accessoryView = switchView;
             [switchView setOn:YES];
-            [switchView release];
         }
     }
     cell.textLabel.text = [[items objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
@@ -197,13 +196,11 @@
         
         [self presentModalViewController:mailer animated:YES];
         
-        [mailer release];
     }
     else
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure" message:@"Your device doesn't support the composer sheet" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
-        [alert release];
     }
 	
 }
@@ -232,10 +229,5 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
-- (void) dealloc
-{
-    [settingsView release];
-    [super dealloc];
-}
 
 @end

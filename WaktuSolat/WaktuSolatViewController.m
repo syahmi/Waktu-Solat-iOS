@@ -9,7 +9,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "WaktuSolatViewController.h"
 #import "KawasanViewController.h"
-#import "JakimPrayerTime.h"
 #import "SettingsViewController.h"
 
 @interface WaktuSolatViewController ()
@@ -48,9 +47,8 @@
 
     self.navigationItem.leftBarButtonItem = leftButton;
 
-    self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil];
 
-    [leftButton release];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -67,11 +65,6 @@
     NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
 
     NSString *code = [data objectForKey:@"Code"] != nil ? [data objectForKey:@"Code"] : @"sgr03";
-    
-    JakimSolatParser *parser = [[JakimSolatParser alloc] initWithCode:code];
-    parser.delegate = self;
-    [parser parse];
-    [parser release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -102,11 +95,8 @@
     [locationLabel addGestureRecognizer:locationLabelGesture];
     
     UIBarButtonItem *location = [[UIBarButtonItem alloc] initWithCustomView:locationLabel];
-    [locationLabelGesture release];
     
     [self.navigationController.toolbar setItems:[NSArray arrayWithObject:location]];
-    [locationLabel release];
-    [location release];
     
     // Custom titleView
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake((320-200)/2, (44-34)/2, 200, 34)];
@@ -120,7 +110,6 @@
     titleLabel.shadowColor = [UIColor blackColor];
     titleLabel.shadowOffset = CGSizeMake(0, 1);
     [titleView addSubview:titleLabel];
-    [titleLabel release];
     
     UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 200, 14)];
     dateLabel.textAlignment = UITextAlignmentCenter;
@@ -131,10 +120,8 @@
     dateLabel.shadowColor = [UIColor blackColor];
     dateLabel.shadowOffset = CGSizeMake(0, 1);
     [titleView addSubview:dateLabel];
-    [dateLabel release];
     
     self.navigationItem.titleView = titleView;
-    [titleView release];
     
     [self.tableView reloadData];
 }
@@ -159,13 +146,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
         cell.textLabel.textColor = [UIColor colorWithRed:29/255.0 green:29/255.0 blue:29/255.0 alpha:1];
         cell.textLabel.font = [UIFont fontWithName:@"ProximaNova-Bold" size:20];
         cell.detailTextLabel.textColor = [UIColor colorWithRed:72/255.0 green:119/255.0 blue:60/255.0 alpha:1];
         cell.detailTextLabel.font = [UIFont fontWithName:@"ProximaNova-Semibold" size:18];
     } if ([indexPath section] == 0) {
-        cell.backgroundView = [[[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"cellBackground.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]] autorelease];
+        cell.backgroundView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"cellBackground.png"] stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]];
         if(indexPath.row == 0) {
             cell.imageView.image = [UIImage imageNamed:@"imsak.png"];
         } if(indexPath.row == 1) {
@@ -206,50 +193,6 @@
 {
     SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
     [self.navigationController pushViewController:settingsViewController animated:YES];
-}
-
-- (void)jakimSolatParser:(JakimSolatParser *)parser didParsePrayerTime:(JakimPrayerTime *)prayerTime
-{
-
-    NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT+8"]];
-    [dateFormatter setDateFormat:@"h:mm a"];
-    
-    [data setObject:[dateFormatter stringFromDate:prayerTime.imsak] forKey:@"Imsak"];
-    [data setObject:[dateFormatter stringFromDate:prayerTime.subuh] forKey:@"Subuh"];
-    [data setObject:[dateFormatter stringFromDate:prayerTime.syuruk] forKey:@"Syuruk"];
-    [data setObject:[dateFormatter stringFromDate:prayerTime.zohor] forKey:@"Zohor"];
-    [data setObject:[dateFormatter stringFromDate:prayerTime.asar] forKey:@"Asar"];
-    [data setObject:[dateFormatter stringFromDate:prayerTime.maghrib] forKey:@"Maghrib"];
-    [data setObject:[dateFormatter stringFromDate:prayerTime.isyak] forKey:@"Isyak"];
-    [dateFormatter setDateFormat:@"EEEE, dd LLLL yyyy"];
-    [data setObject:[dateFormatter stringFromDate:prayerTime.imsak] forKey:@"Date"];
-    [data setObject:prayerTime.code forKey:@"Code"];
-    [data setObject:prayerTime.location forKey:@"Location"];
-    
-    [data writeToFile:path atomically:YES];
-    [data release];
-    
-    [self displayData];
-}
-
-- (void)jakimSolatParser:(JakimSolatParser *)parser didFailWithError:(NSError *)error
-{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Cannot load data from server. Try again!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-    [alert show];
-    [alert release];
-    
-    [self displayData];
-}
-
-- (void)dealloc
-{
-    [waktuSolat release];
-    [waktuSolatLabel release];
-    [path release];
-    [super dealloc];
 }
 
 @end

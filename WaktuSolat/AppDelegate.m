@@ -20,24 +20,15 @@
 @synthesize splashView = _splashView;
 @synthesize rateApp = _rateApp;
 
-- (void)dealloc
-{
-    [_window release];
-    [_kawasanViewController release];
-    [_waktuSolatViewController release];
-    [_splashView release];
-    [_rateApp release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    self.waktuSolatViewController = [[[WaktuSolatViewController alloc] initWithNibName:@"WaktuSolatViewController" bundle:nil] autorelease];
+    self.waktuSolatViewController = [[WaktuSolatViewController alloc] initWithNibName:@"WaktuSolatViewController" bundle:nil];
     
-    UINavigationController *navigationController = [[[UINavigationController alloc] initWithRootViewController:self.waktuSolatViewController] autorelease];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.waktuSolatViewController];
     
     // Add iOS 4.3 and below compatibilty
     
@@ -111,7 +102,6 @@
 - (void)removeSplash
 {
     [_splashView removeFromSuperview];
-    [_splashView release];
 }
 
 #pragma mark - Rate Waktu Solat
@@ -128,7 +118,6 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enjoying Waktu Solat?" message:@"If so, please rate this app on the App Store so we can keep the free updates coming." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Yes, rate it!", @"Never ask again", @"Remind me later", nil];
         alert.delegate = self;
         [alert show];
-        [alert release];
     }
 }
 

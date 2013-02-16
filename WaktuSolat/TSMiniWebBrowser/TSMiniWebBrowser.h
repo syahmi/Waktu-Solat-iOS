@@ -65,7 +65,7 @@ typedef enum {
     UIBarStyle originalBarStyle;
 }
 
-@property (assign) id<TSMiniWebBrowserDelegate> delegate;
+@property (unsafe_unretained) id<TSMiniWebBrowserDelegate> delegate;
 
 @property (nonatomic, assign) TSMiniWebBrowserMode mode;
 @property (nonatomic, assign) BOOL showURLStringOnActionSheetTitle;

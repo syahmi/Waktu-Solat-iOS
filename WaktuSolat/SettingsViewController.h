@@ -18,6 +18,6 @@
     NSMutableArray *items;
 }
 
-@property (nonatomic, retain) IBOutlet UITableView *settingsView;
+@property (nonatomic, strong) IBOutlet UITableView *settingsView;
 
 @end
