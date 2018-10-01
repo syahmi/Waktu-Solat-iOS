@@ -13,7 +13,7 @@ You should have received a copy of the GNU General Public License along with Wak
 # Contributors
 
 - Sumardi Shukor <sumardi@appcable.com>
-- Syahmi Ismail <syahmi@appcable.com>
+- Syahmi Ismail <msi@syamey.com>
 
 # Todo
 
